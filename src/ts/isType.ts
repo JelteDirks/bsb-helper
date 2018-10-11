@@ -1,4 +1,4 @@
-import {argsToArray} from "../argsToArray";
+import {argsToArray} from "./argsToArray";
 
 interface Type {
     isArray(...value: any[]): boolean;
