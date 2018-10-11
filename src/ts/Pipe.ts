@@ -1,26 +1,36 @@
 export class Pipe {
-    private functions: { (data): any }[] = [];
 
-    constructor(private value: any = "") {
+    private functions: PipeFunctionInformation[] = [];
+
+    constructor(private value: any) {
     }
 
-    add(fn: { (data): any }): this {
-        this.functions.push(fn);
+    public add(fn: { (data: any): any }, thisObject: any = null): this {
+
+        this.functions.push({
+            fn: fn,
+            thisObject: thisObject
+        });
 
         return this;
     }
 
-    run(): any {
-        let value = this.value;
+    public run(): void {
+        let result = this.value;
 
-        this.functions.forEach((fn) => {
-            value = fn(value);
+        this.functions.forEach((p: PipeFunctionInformation) => {
+            result = p.fn.call(p.thisObject, result);
         });
 
-        this.value = value;
+        this.value = result;
     }
 
-    getValue(): any {
+    public getValue(): any {
         return this.value;
     }
+}
+
+interface PipeFunctionInformation {
+    fn: { (data: any): any };
+    thisObject: any;
 }
