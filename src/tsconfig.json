@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "baseUrl": "src",
+    "paths": {
+      "createPlainElement/*": [
+        "ts/createPlainElement/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

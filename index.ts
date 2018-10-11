@@ -1,8 +1,5 @@
-export function logging() {
-    console.log('logging');
-}
-
-import {Pipe} from "./src/ts/Pipe";
-
-
-export {Pipe};
+export * from "./src/ts/prettyPrint";
+export * from "./src/ts/Pipe";
+export * from "./src/ts/pad";
+export * from "./src/ts/isType";
+export * from "./src/ts/createPlainElement";
