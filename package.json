@@ -2,7 +2,7 @@
   "name": "bsb-helper",
   "version": "1.0.0",
   "description": "Helper functions for bsb projects",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
