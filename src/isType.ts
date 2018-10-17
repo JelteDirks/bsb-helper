@@ -16,7 +16,7 @@ export interface Type {
     isUndefined(...value: any[]): boolean;
 }
 
-let type: Type = {
+export var type: Type = {
     isArray: curryType('Array'),
     isString: curryType('String'),
     isObject: curryType('Object'),
@@ -41,5 +41,3 @@ function curryType(type: string): (...value: any[]) => boolean {
         });
     }
 }
-
-export {type};
