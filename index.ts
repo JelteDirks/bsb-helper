@@ -1,4 +1,3 @@
-import {Element} from "./src/Element";
-import {Attribute} from "./src/Element";
+import {pad} from "./src/pad";
 
-export {Element, Attribute};
+export = pad;
