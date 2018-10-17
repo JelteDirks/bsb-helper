@@ -1,6 +1,6 @@
 import {argsToArray} from "./argsToArray";
 
-interface Type {
+export interface Type {
     isArray(...value: any[]): boolean;
 
     isString(...value: any[]): boolean;
