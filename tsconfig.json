@@ -5,7 +5,7 @@
     "noImplicitAny": false,
     "sourceMap": false,
     "declaration": true,
-    "outDir": "dist"
+    "outDir": "lib"
   },
   "exclude": [
     "node_modules",
