@@ -9,6 +9,12 @@
   },
   "exclude": [
     "node_modules",
+    "definitions",
     "dist"
+  ],
+  "include": [
+    "./src/*",
+    "*.ts",
+    "*.d.ts"
   ]
 }
