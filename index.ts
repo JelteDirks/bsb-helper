@@ -22,6 +22,8 @@ export {
     filterEmptyProperties,
     Currency,
     cleanEuroFromQuestion,
+    needsEuroCleaning,
+    addEuroToAnswer,
     argsToArray,
     arrayFind
 };
