@@ -16,7 +16,7 @@ export interface Type {
     isUndefined(...value: any[]): boolean;
 }
 
-export var type: Type = {
+export var isType: Type = {
     isArray: curryType('Array'),
     isString: curryType('String'),
     isObject: curryType('Object'),
