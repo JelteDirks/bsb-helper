@@ -10,6 +10,9 @@ import {Currency} from "./src/currencyConversion";
 import {cleanEuroFromQuestion, needsEuroCleaning, addEuroToAnswer} from "./src/cleanEuro";
 import {arrayFind} from "./src/arrayFind";
 import {argsToArray} from "./src/argsToArray";
+import {dateDifference} from "./src/dateDifference";
+import {millisToDays} from "./src/millisToDays";
+import {stringToDate} from "./src/stringToDate";
 
 export {
     pad,
@@ -25,5 +28,8 @@ export {
     needsEuroCleaning,
     addEuroToAnswer,
     argsToArray,
-    arrayFind
+    arrayFind,
+    dateDifference,
+    millisToDays,
+    stringToDate
 };
