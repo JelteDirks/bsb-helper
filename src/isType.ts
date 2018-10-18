@@ -14,6 +14,8 @@ export interface Type {
     isNull(...value: any[]): boolean;
 
     isUndefined(...value: any[]): boolean;
+
+    isBoolean(...value: any []): boolean;
 }
 
 export var isType: Type = {
@@ -22,6 +24,7 @@ export var isType: Type = {
     isObject: curryType('Object'),
     isNumber: curryType('Number'),
     isDate: curryType('Date'),
+    isBoolean: curryType('Boolean'),
     isNull: function () {
         return argsToArray(arguments).every(function (argument: any) {
             return argument === null;
