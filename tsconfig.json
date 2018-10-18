@@ -8,13 +8,14 @@
     "outDir": "lib"
   },
   "exclude": [
-    "node_modules",
+    "./node_modules",
     "definitions",
-    "dist"
+    "./dist",
+    "./lib",
+    "./**/*.spec.ts"
   ],
   "include": [
-    "./src/**/*",
-    "*.ts",
+    "./src/**/*.ts",
     "*.d.ts"
   ]
 }
