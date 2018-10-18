@@ -8,6 +8,5 @@ export function stringToDate(sVal: string, format: string): Date {
     const month = sVal.substr(monthIndex, 2);
     const year = sVal.substr(yearIndex, 4);
 
-    let d = new Date(Number(year), Number(month) - 1, Number(day));
-    return d;
+    return new Date(Number(year), Number(month) - 1, Number(day));
 }
