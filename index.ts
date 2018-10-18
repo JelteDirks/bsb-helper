@@ -13,6 +13,8 @@ import {argsToArray} from "./src/argsToArray";
 import {dateDifference} from "./src/dateDifference";
 import {millisToDays} from "./src/millisToDays";
 import {stringToDate} from "./src/stringToDate";
+import {Element, ElementData} from "./src/Element/Element";
+import {Attribute, AttributeData} from "./src/Element/Attribute";
 
 export {
     pad,
@@ -31,5 +33,9 @@ export {
     arrayFind,
     dateDifference,
     millisToDays,
-    stringToDate
+    stringToDate,
+    ElementData,
+    Element,
+    AttributeData,
+    Attribute
 };
