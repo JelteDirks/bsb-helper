@@ -5,6 +5,10 @@ export class Pipe {
     constructor(private value: any) {
     }
 
+    public setValue(value: any) {
+        this.value = value;
+    }
+
     public add(fn: { (data: any): any }, thisObject: any = null): this {
 
         this.functions.push({

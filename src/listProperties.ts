@@ -1,4 +1,4 @@
-function listProperties(obj: any): { key: string, value: any }[] {
+export function listProperties(obj: any): { key: string, value: any }[] {
     return Object.keys(obj).map(function (key) {
         return {
             key: key,
@@ -6,5 +6,3 @@ function listProperties(obj: any): { key: string, value: any }[] {
         };
     });
 }
-
-export {listProperties};
