@@ -6,7 +6,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "postinstall": "tsc"
+    "postinstall": "tsc",
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",
