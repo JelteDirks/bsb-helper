@@ -13,9 +13,5 @@
     "./dist",
     "./lib",
     "./**/*.spec.ts"
-  ],
-  "include": [
-    "./src/**/*.ts",
-    "*.d.ts"
   ]
 }
