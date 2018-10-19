@@ -3,7 +3,7 @@ import {Pipe} from "./src/Pipe";
 import {prettyPrint} from "./src/prettyPrint";
 import {nonEmptyProperty} from "./src/nonEmptyProperty";
 import {listProperties} from "./src/listProperties";
-import {type} from "./src/isType";
+import {isType} from "./src/isType";
 import {isLeapYear} from "./src/isLeapYear";
 import {filterEmptyProperties} from "./src/filterEmptyProperties";
 import {Currency} from "./src/currencyConversion";
@@ -22,7 +22,7 @@ export {
     prettyPrint,
     nonEmptyProperty,
     listProperties,
-    type,
+    isType,
     isLeapYear,
     filterEmptyProperties,
     Currency,

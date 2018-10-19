@@ -1,5 +1,6 @@
 import {stringToDate} from "./stringToDate";
 import {millisToDays} from "./millisToDays";
+import {isType} from "./isType";
 
 export function dateDifference(startDate: string | Date, endDate: string | Date, format?: string): number {
 
@@ -7,6 +8,8 @@ export function dateDifference(startDate: string | Date, endDate: string | Date,
     let endDayMillis: number;
     let sDate: Date;
     let eDate: Date;
+
+    if ((isType.isString(startDate) || isType.isString(endDate)) && !isType.isString(format)) throw new Error('can not use string dates without specifying format');
 
     if (startDate instanceof Date) {
         sDate = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());

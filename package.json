@@ -6,8 +6,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "postinstall": "tsc",
-    "test": "npx jest"
+    "postinstall": "npm run build",
+    "test": "jest --config jest.config.js"
   },
   "repository": {
     "type": "git",

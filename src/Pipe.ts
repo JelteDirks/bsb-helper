@@ -36,5 +36,5 @@ export class Pipe {
 
 interface PipeFunctionInformation {
     fn: { (data: any): any };
-    thisObject: any;
+    thisObject?: any;
 }
