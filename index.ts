@@ -14,6 +14,9 @@ import {millisToDays} from "./src/millisToDays";
 import {stringToDate} from "./src/stringToDate";
 import {Element, ElementData} from "./src/Element/Element";
 import {Attribute, AttributeData} from "./src/Element/Attribute";
+import {filterOutChar} from "./src/filterOutChar";
+import {filterOutNumbers} from "./src/filterOutNumbers";
+import {keepChar} from "./src/keepChar";
 
 export {
     pad,
@@ -35,5 +38,8 @@ export {
     ElementData,
     Element,
     AttributeData,
-    Attribute
+    Attribute,
+    filterOutChar,
+    filterOutNumbers,
+    keepChar
 };
