@@ -1,5 +1,3 @@
-import {argsToArray} from "./argsToArray";
-
 export interface Type {
     isArray(...value: any[]): boolean;
 
@@ -38,29 +36,29 @@ export var isType: Type = {
     anyIsNumber: curryTypeAny('Number'),
     anyIsDate: curryTypeAny('Date'),
     anyIsBoolean: curryTypeAny('Array'),
-    isNull: function () {
-        return argsToArray(arguments).every(function (argument: any) {
+    isNull: function (...args) {
+        return args.every(function (argument: any) {
             return argument === null;
         });
     },
-    isUndefined: function () {
-        return argsToArray(arguments).every(function (argument: any) {
+    isUndefined: function (...args) {
+        return args.every(function (argument: any) {
             return typeof argument === typeof undefined;
         });
     }
 };
 
 function curryTypeEvery(type: string): (...value: any[]) => boolean {
-    return function () {
-        return argsToArray(arguments).every(function (argument: any) {
+    return function (...args) {
+        return args.every(function (argument: any) {
             return Object.prototype.toString.call(argument) === '[object ' + type + ']'
         });
     }
 }
 
 function curryTypeAny(type: string): (...value: any[]) => boolean {
-    return function () {
-        return argsToArray(arguments).some(function (argument: any) {
+    return function (...args) {
+        return args.some(function (argument: any) {
             return Object.prototype.toString.call(argument) === '[object ' + type + ']'
         });
     }
