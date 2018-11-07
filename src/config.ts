@@ -1,4 +1,4 @@
-const forms: FormInfo[] = [
+const FORMS: FormInfo[] = [
     {
         number: 'X0100',
         subject: 'Nieuwe polis'
@@ -38,4 +38,4 @@ interface FormInfo {
     subject: string;
 }
 
-export {forms, FormInfo};
+export {FORMS, FormInfo};

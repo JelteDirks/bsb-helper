@@ -17,6 +17,7 @@ import {Attribute, AttributeData} from "./src/Element/Attribute";
 import {filterOutChar} from "./src/filterOutChar";
 import {filterOutNumbers} from "./src/filterOutNumbers";
 import {keepChar} from "./src/keepChar";
+import {FORMS, FormInfo} from "./src/config";
 
 export {
     pad,
@@ -41,5 +42,7 @@ export {
     Attribute,
     filterOutChar,
     filterOutNumbers,
-    keepChar
+    keepChar,
+    FORMS,
+    FormInfo
 };
