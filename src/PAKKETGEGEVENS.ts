@@ -123,11 +123,11 @@ const POLISGEGEVENS: PakketoverzichtData[] = [
 ];
 
 function pakketcodeIs47(l: string) {
-    return l === '00047';
+    return this.labelFinder('61000') === '00047';
 }
 
 function pakketcodeIsNot47(l: string) {
-    return l !== '00047';
+    return this.labelFinder('61000') !== '00047';
 }
 
 interface PakketoverzichtData {
