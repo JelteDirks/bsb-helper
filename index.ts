@@ -19,7 +19,7 @@ import {filterOutNumbers} from "./src/filterOutNumbers";
 import {keepChar} from "./src/keepChar";
 import {FORMS, FormInfo} from "./src/FORMS";
 import {labelFinder} from "./src/labelFinder";
-import {PAKKETOVERZICHT, PakketoverzichtData} from "./src/PAKKETOVERZICHT";
+import {PAKKETGEGEVENS, PakketoverzichtData, CheckObject, POLISGEGEVENS, VERZEKERINGNEMER} from "./src/PAKKETGEGEVENS";
 
 export {
     pad,
@@ -48,6 +48,9 @@ export {
     FORMS,
     FormInfo,
     labelFinder,
-    PAKKETOVERZICHT,
-    PakketoverzichtData
+    PAKKETGEGEVENS,
+    PakketoverzichtData,
+    CheckObject,
+    POLISGEGEVENS,
+    VERZEKERINGNEMER
 };
