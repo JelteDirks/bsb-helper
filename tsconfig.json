@@ -6,7 +6,10 @@
     "sourceMap": false,
     "declaration": true,
     "outDir": "lib",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./node_modules/bsb-typings/index.d.ts"
+    ]
   },
   "exclude": [
     "./node_modules",
