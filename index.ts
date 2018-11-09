@@ -18,6 +18,8 @@ import {filterOutChar} from "./src/filterOutChar";
 import {filterOutNumbers} from "./src/filterOutNumbers";
 import {keepChar} from "./src/keepChar";
 import {FORMS, FormInfo} from "./src/FORMS";
+import {labelFinder} from "./src/labelFinder";
+import {pakketoverzichtData, PakketoverzichtData} from "./src/pakketoverzicht";
 
 export {
     pad,
@@ -44,5 +46,8 @@ export {
     filterOutNumbers,
     keepChar,
     FORMS,
-    FormInfo
+    FormInfo,
+    labelFinder,
+    pakketoverzichtData,
+    PakketoverzichtData
 };
