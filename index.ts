@@ -20,6 +20,7 @@ import {keepChar} from "./src/keepChar";
 import {FORMS, FormInfo} from "./src/FORMS";
 import {labelFinder} from "./src/labelFinder";
 import {PAKKETGEGEVENS, PakketoverzichtData, CheckObject, POLISGEGEVENS, VERZEKERINGNEMER} from "./src/PAKKETGEGEVENS";
+import {toArray} from "./src/toArray";
 
 export {
     pad,
@@ -52,5 +53,6 @@ export {
     PakketoverzichtData,
     CheckObject,
     POLISGEGEVENS,
-    VERZEKERINGNEMER
+    VERZEKERINGNEMER,
+    toArray
 };
