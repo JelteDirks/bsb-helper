@@ -1,16 +1,18 @@
-const pakketoverzichtData: PakketoverzichtData[] = [
+const PAKKETOVERZICHT: PakketoverzichtData[] = [
     {
         description: 'Polisnummer',
-        value: '60004',
+        label: '60004',
         check: '60004'
     }
 ];
 
 interface PakketoverzichtData {
     description: string;
-    value: string;
+    label?: string;
+    constant?: string;
+    template?: string;
     check?: string | string[];
     default?: string;
 }
 
-export {pakketoverzichtData, PakketoverzichtData}
+export {PAKKETOVERZICHT, PakketoverzichtData}
