@@ -21,6 +21,9 @@
     "url": "https://github.com/JelteDirks/bsb-helper/issues"
   },
   "homepage": "https://github.com/JelteDirks/bsb-helper#readme",
+  "dependencies": {
+    "bsb-typings": "git+https://3ac37664417033312700439d5ca3a8011649947e:x-oauth-basic@github.com/JelteDirks/bsb-typings.git"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.5",
     "@webpack-cli/init": "^0.1.2",
