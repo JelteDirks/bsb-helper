@@ -1,5 +1,3 @@
-/// <reference types="../node_modules/bsb-typings/index.d.ts">
-
 import {isType} from "./isType";
 import {arrayFind} from "./arrayFind";
 
