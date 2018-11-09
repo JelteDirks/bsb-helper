@@ -15,9 +15,12 @@ export function labelFinder(l: string): string | number | Date | undefined {
         attr = 'omsch';
     }
 
+    logger.info(l);
     l.replace(/[co]/g, '');
+    logger.info(l);
 
     const result: OLRecord = arrayFind(rec, (item: OLRecord) => {
+        logger.info(item.fields['number'].toString());
         return item.fields['number'] === l;
     });
 
