@@ -134,9 +134,7 @@ interface PakketoverzichtData {
     description: string;
     label?: string | string[];
     constant?: string;
-    template?: string;
     check?: CheckObject;
-    default?: string;
 }
 
 interface CheckObject {
