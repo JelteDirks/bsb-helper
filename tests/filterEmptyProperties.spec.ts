@@ -1,4 +1,4 @@
-import {filterEmptyProperties} from "./filterEmptyProperties";
+import {filterEmptyProperties} from "../src/filterEmptyProperties";
 
 let testObj = [
     {

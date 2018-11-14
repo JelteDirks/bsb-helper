@@ -1,4 +1,4 @@
-import {dateDifference} from "./dateDifference";
+import {dateDifference} from "../src/dateDifference";
 
 test('string comparison metric', () => {
     expect(dateDifference('10-10-2010', '20-10-2010', 'DD-MM-YYYY')).toBe(10);

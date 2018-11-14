@@ -1,4 +1,4 @@
-import {Currency} from "./currencyConversion";
+import {Currency} from "../src/currencyConversion";
 
 
 

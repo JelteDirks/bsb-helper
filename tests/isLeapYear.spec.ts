@@ -1,4 +1,4 @@
-import {isLeapYear} from "./isLeapYear";
+import {isLeapYear} from "../src/isLeapYear";
 
 test('basic leap year', () => {
     expect(isLeapYear(2000)).toBeTruthy();

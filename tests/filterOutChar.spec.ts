@@ -1,4 +1,4 @@
-import {filterOutChar} from "./filterOutChar";
+import {filterOutChar} from "../src/filterOutChar";
 
 test('basic', () => {
     expect(filterOutChar('0123', 48)).toMatch('123')

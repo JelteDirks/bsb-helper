@@ -1,4 +1,4 @@
-import {pad} from "./pad";
+import {pad} from "../src/pad";
 
 test('basic', () => {
     expect(pad('1', '0', 5)).toBe('00001');

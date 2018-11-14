@@ -1,4 +1,4 @@
-import {Pipe} from "./Pipe";
+import {Pipe} from "../src/Pipe";
 
 test('initial value', () => {
     let p = new Pipe('value');

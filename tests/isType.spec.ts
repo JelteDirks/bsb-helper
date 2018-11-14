@@ -1,4 +1,4 @@
-import {isType} from "./isType";
+import {isType} from "../src/isType";
 
 test('string test', () => {
     expect(isType.isString('')).toBeTruthy();

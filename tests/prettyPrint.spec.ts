@@ -1,4 +1,4 @@
-import {prettyPrint} from "./prettyPrint";
+import {prettyPrint} from "../src/prettyPrint";
 
 test('upper case replacement', () => {
     expect(prettyPrint('h')).toBe('H');

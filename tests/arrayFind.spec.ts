@@ -1,4 +1,4 @@
-import {arrayFind} from "./arrayFind";
+import {arrayFind} from "../src/arrayFind";
 
 let testObject = [
     {

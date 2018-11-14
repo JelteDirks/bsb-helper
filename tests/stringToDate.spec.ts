@@ -1,4 +1,4 @@
-import {stringToDate} from "./stringToDate";
+import {stringToDate} from "../src/stringToDate";
 
 test('basic metric', () => {
     expect(stringToDate('10-10-2018', 'DD-MM-YYYY').toString()).toBe(new Date(2018, 9, 10).toString());

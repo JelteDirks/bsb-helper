@@ -1,4 +1,4 @@
-import {numberToStringCurrency} from "./numberToStringCurrency";
+import {numberToStringCurrency} from "../src/numberToStringCurrency";
 
 test('numToCurrency dec comma', () => {
     expect(numberToStringCurrency(100, ',')).toMatch('100,00');

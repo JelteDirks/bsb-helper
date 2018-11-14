@@ -1,4 +1,4 @@
-import {listProperties} from "./listProperties";
+import {listProperties} from "../src/listProperties";
 
 test('basic property listing', () => {
     const testObject = {

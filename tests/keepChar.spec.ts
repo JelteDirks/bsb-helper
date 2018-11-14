@@ -1,4 +1,4 @@
-import {keepChar} from "./keepChar";
+import {keepChar} from "../src/keepChar";
 
 test('basic', () => {
     expect(keepChar('abc0123', 48)).toMatch('0');
