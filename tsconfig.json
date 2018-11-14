@@ -12,7 +12,8 @@
       "./node_modules/@types"
     ],
     "types": [
-      "bsb-typings"
+      "bsb-typings",
+      "jest"
     ]
   },
   "exclude": [
