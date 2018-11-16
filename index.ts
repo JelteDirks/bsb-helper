@@ -21,6 +21,7 @@ import {FORMS, FormInfo} from "./src/FORMS";
 import {labelFinder} from "./src/labelFinder";
 import {PAKKETGEGEVENS, PakketoverzichtData, CheckObject, POLISGEGEVENS, VERZEKERINGNEMER} from "./src/PAKKETGEGEVENS";
 import {toArray} from "./src/toArray";
+import {fieldFinder} from "./src/fieldFinder";
 
 export {
     pad,
@@ -54,5 +55,6 @@ export {
     CheckObject,
     POLISGEGEVENS,
     VERZEKERINGNEMER,
-    toArray
+    toArray,
+    fieldFinder
 };
