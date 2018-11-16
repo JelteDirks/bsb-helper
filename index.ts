@@ -22,6 +22,7 @@ import {labelFinder} from "./src/labelFinder";
 import {PAKKETGEGEVENS, PakketoverzichtData, CheckObject, POLISGEGEVENS, VERZEKERINGNEMER} from "./src/PAKKETGEGEVENS";
 import {toArray} from "./src/toArray";
 import {fieldFinder} from "./src/fieldFinder";
+import {Log, log, LogMessage} from "./src/Log";
 
 export {
     pad,
@@ -56,5 +57,8 @@ export {
     POLISGEGEVENS,
     VERZEKERINGNEMER,
     toArray,
-    fieldFinder
+    fieldFinder,
+    log,
+    LogMessage,
+    Log
 };
