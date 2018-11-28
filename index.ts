@@ -23,6 +23,8 @@ import {PAKKETGEGEVENS, PakketoverzichtData, CheckObject, POLISGEGEVENS, VERZEKE
 import {toArray} from "./src/toArray";
 import {fieldFinder} from "./src/fieldFinder";
 import {Log, log, LogMessage} from "./src/Log";
+import {onlyNumbers} from "./src/onlyNumbers";
+import {charIsNumber} from "./src/charIsNumber";
 
 export {
     pad,
@@ -60,5 +62,7 @@ export {
     fieldFinder,
     log,
     LogMessage,
-    Log
+    Log,
+    onlyNumbers,
+    charIsNumber
 };
