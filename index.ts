@@ -25,6 +25,7 @@ import {fieldFinder} from "./src/fieldFinder";
 import {Log, log, LogMessage} from "./src/Log";
 import {onlyNumbers} from "./src/onlyNumbers";
 import {charIsNumber} from "./src/charIsNumber";
+import {isBetween} from "./src/isBetween";
 
 export {
     pad,
@@ -64,5 +65,6 @@ export {
     LogMessage,
     Log,
     onlyNumbers,
-    charIsNumber
+    charIsNumber,
+    isBetween
 };
