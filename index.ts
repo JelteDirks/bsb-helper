@@ -26,6 +26,8 @@ import {Log, log, LogMessage} from "./src/Log";
 import {onlyNumbers} from "./src/onlyNumbers";
 import {charIsNumber} from "./src/charIsNumber";
 import {isBetween} from "./src/isBetween";
+import {keepNumbers} from "./src/keepNumbers";
+import {stringCurrencyToNumber} from "./src/stringCurrencyToNumber";
 
 export {
     pad,
@@ -66,5 +68,7 @@ export {
     Log,
     onlyNumbers,
     charIsNumber,
-    isBetween
+    isBetween,
+    keepNumbers,
+    stringCurrencyToNumber
 };
