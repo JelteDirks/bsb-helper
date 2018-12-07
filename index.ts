@@ -28,6 +28,7 @@ import {charIsNumber} from "./src/charIsNumber";
 import {isBetween} from "./src/isBetween";
 import {keepNumbers} from "./src/keepNumbers";
 import {stringCurrencyToNumber} from "./src/stringCurrencyToNumber";
+import {keepCapitals} from "./src/keepCapitals";
 
 export {
     pad,
@@ -70,5 +71,6 @@ export {
     charIsNumber,
     isBetween,
     keepNumbers,
-    stringCurrencyToNumber
+    stringCurrencyToNumber,
+    keepCapitals
 };
