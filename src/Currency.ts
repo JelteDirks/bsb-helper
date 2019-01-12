@@ -3,7 +3,7 @@ import {numberToStringCurrency} from "./numberToStringCurrency";
 
 export class Currency {
 
-    private initialValue: string | number;
+    readonly initialValue: string | number;
     private _value: string;
 
     constructor(private decimalSeparator: string, initialValue?: string | number) {
