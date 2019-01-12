@@ -6,7 +6,7 @@ import {listProperties} from "./src/listProperties";
 import {isType} from "./src/isType";
 import {isLeapYear} from "./src/isLeapYear";
 import {filterEmptyProperties} from "./src/filterEmptyProperties";
-import {Currency} from "./src/currencyConversion";
+import {Currency} from "./src/Currency";
 import {cleanEuroFromQuestion, needsEuroCleaning, addEuroToAnswer} from "./src/cleanEuro";
 import {arrayFind} from "./src/arrayFind";
 import {dateDifference} from "./src/dateDifference";

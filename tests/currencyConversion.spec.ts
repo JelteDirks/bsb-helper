@@ -1,4 +1,4 @@
-import {Currency} from "../src/currencyConversion";
+import {Currency} from "../src/Currency";
 
 let x = new Currency(',', '10.000,00');
 
