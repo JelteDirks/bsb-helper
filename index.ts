@@ -30,6 +30,7 @@ import {keepNumbers} from "./src/keepNumbers";
 import {stringCurrencyToNumber} from "./src/stringCurrencyToNumber";
 import {keepCapitals} from "./src/keepCapitals";
 import {setProperty} from "./src/setProperty";
+import {copyProperties} from "./src/copyProperties";
 
 export {
     pad,
@@ -74,5 +75,6 @@ export {
     keepNumbers,
     stringCurrencyToNumber,
     keepCapitals,
-    setProperty
+    setProperty,
+    copyProperties
 };
