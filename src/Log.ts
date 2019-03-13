@@ -1,23 +1,36 @@
 export class Log {
     private enabled = true;
     private messages: LogMessage[] = [];
+    private mode: string = "default";
 
     constructor() {
     }
 
+    public setMode(m: string): void {
+        this.mode = m;
+    }
+
+    private addMessage(m: LogMessage) {
+        this.messages.push(m);
+
+        if (this.mode === "immediate") {
+            logger.info(m.retrieve());
+        }
+    }
+
     public info(v: string) {
         if (!this.enabled) return;
-        this.messages.push(new LogMessage('info', v));
+        this.addMessage(new LogMessage('info', v));
     }
 
     public warn(v: string) {
         if (!this.enabled) return;
-        this.messages.push(new LogMessage('warn', v));
+        this.addMessage(new LogMessage('warn', v));
     }
 
     public error(v: string) {
         if (!this.enabled) return;
-        this.messages.push(new LogMessage('error', v));
+        this.addMessage(new LogMessage('error', v));
     }
 
     public logAll() {
