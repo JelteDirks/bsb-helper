@@ -4,4 +4,3 @@ dist
 lib
 src/**/*.js
 src/**/*.d.ts
-tests/**/*.ts
