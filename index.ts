@@ -31,6 +31,7 @@ import {stringCurrencyToNumber} from "./src/stringCurrencyToNumber";
 import {keepCapitals} from "./src/keepCapitals";
 import {setProperty} from "./src/setProperty";
 import {copyProperties} from "./src/copyProperties";
+import {templateLabelFiller} from "./src/templateLabelFiller";
 
 export {
     pad,
@@ -77,5 +78,6 @@ export {
     keepCapitals,
     setProperty,
     copyProperties,
-    LabelFinderResults
+    LabelFinderResults,
+    templateLabelFiller
 };
