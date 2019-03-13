@@ -18,7 +18,7 @@ import {filterOutChar} from "./src/filterOutChar";
 import {filterOutNumbers} from "./src/filterOutNumbers";
 import {keepChar} from "./src/keepChar";
 import {FORMS, FormInfo} from "./src/FORMS";
-import {labelFinder} from "./src/labelFinder";
+import {labelFinder, LabelFinderResults} from "./src/labelFinder";
 import {PAKKETGEGEVENS, PakketoverzichtData, CheckObject, POLISGEGEVENS, VERZEKERINGNEMER} from "./src/PAKKETGEGEVENS";
 import {toArray} from "./src/toArray";
 import {fieldFinder} from "./src/fieldFinder";
@@ -76,5 +76,6 @@ export {
     stringCurrencyToNumber,
     keepCapitals,
     setProperty,
-    copyProperties
+    copyProperties,
+    LabelFinderResults
 };

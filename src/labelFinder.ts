@@ -1,7 +1,9 @@
 import {isType} from "./isType";
 import {arrayFind} from "./arrayFind";
 
-export function labelFinder(l: string): string | number | Date | undefined {
+export type LabelFinderResults = string | number | Date | undefined;
+
+export function labelFinder(l: string): LabelFinderResults {
     let rec: OLRecord[] = this;
     let attr = 'value';
 
