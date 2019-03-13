@@ -1,12 +1,14 @@
+type LogMode = "default" | "immediate";
+
 export class Log {
     private enabled = true;
     private messages: LogMessage[] = [];
-    private mode: string = "default";
+    private mode: LogMode = "default";
 
     constructor() {
     }
 
-    public setMode(m: string): void {
+    public setMode(m: LogMode): void {
         this.mode = m;
     }
 
