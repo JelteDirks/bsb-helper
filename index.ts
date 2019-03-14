@@ -12,8 +12,8 @@ import {arrayFind} from "./src/arrayFind";
 import {dateDifference} from "./src/dateDifference";
 import {millisToDays} from "./src/millisToDays";
 import {stringToDate} from "./src/stringToDate";
-import {Element, ElementData} from "./src/Element/Element";
-import {Attribute, AttributeData} from "./src/Element/Attribute";
+import {Element, ElementData} from "./src/classes/Element/Element";
+import {Attribute, AttributeData} from "./src/classes/Element/Attribute";
 import {filterOutChar} from "./src/filterOutChar";
 import {filterOutNumbers} from "./src/filterOutNumbers";
 import {keepChar} from "./src/keepChar";
@@ -22,7 +22,7 @@ import {labelFinder, LabelFinderResults} from "./src/labelFinder";
 import {PAKKETGEGEVENS, PakketoverzichtData, CheckObject, POLISGEGEVENS, VERZEKERINGNEMER} from "./src/PAKKETGEGEVENS";
 import {toArray} from "./src/toArray";
 import {fieldFinder} from "./src/fieldFinder";
-import {Log, log, LogMessage} from "./src/Log";
+import {Log, log, LogMessage} from "./src/classes/Log";
 import {onlyNumbers} from "./src/onlyNumbers";
 import {charIsNumber} from "./src/charIsNumber";
 import {isBetween} from "./src/isBetween";
@@ -32,6 +32,7 @@ import {keepCapitals} from "./src/keepCapitals";
 import {setProperty} from "./src/setProperty";
 import {copyProperties} from "./src/copyProperties";
 import {templateLabelFiller} from "./src/templateLabelFiller";
+import {Map} from "./src/classes/Map";
 
 export {
     pad,
@@ -79,5 +80,6 @@ export {
     setProperty,
     copyProperties,
     LabelFinderResults,
-    templateLabelFiller
+    templateLabelFiller,
+    Map
 };
