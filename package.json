@@ -6,7 +6,6 @@
   "types": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "postinstall": "npm run build",
     "test": "jest --config jest.config.js",
     "bundle": "webpack --config webpack.dev.js"
   },
