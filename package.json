@@ -1,5 +1,5 @@
 {
-  "name": "bsb-helper",
+  "name": "@bsb/helper",
   "version": "1.0.0",
   "description": "Helper functions for bsb projects",
   "main": "./lib/index.js",
@@ -14,7 +14,10 @@
     "url": "git+https://github.com/JelteDirks/bsb-helper.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Jelte Dirks",
+    "email": "j.dirks@outlook.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JelteDirks/bsb-helper/issues"
