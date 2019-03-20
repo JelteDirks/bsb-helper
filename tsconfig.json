@@ -10,10 +10,6 @@
     "typeRoots": [
       "./node_modules/@bsb",
       "./node_modules/@types"
-    ],
-    "types": [
-      "standard-ol-types",
-      "jest"
     ]
   },
   "exclude": [
