@@ -8,11 +8,11 @@
     "outDir": "lib",
     "moduleResolution": "node",
     "typeRoots": [
-      "./node_modules/bsb-typings",
+      "./node_modules/@bsb",
       "./node_modules/@types"
     ],
     "types": [
-      "bsb-typings",
+      "standard-ol-types",
       "jest"
     ]
   },

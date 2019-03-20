@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JelteDirks/bsb-helper.git"
+    "url": "git+https://github.com/JelteDirks/helper.git"
   },
   "keywords": [],
   "author": {
@@ -20,13 +20,12 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JelteDirks/bsb-helper/issues"
+    "url": "https://github.com/JelteDirks/helper/issues"
   },
-  "homepage": "https://github.com/JelteDirks/bsb-helper#readme",
-  "dependencies": {
-    "bsb-typings": "git+https://3ac37664417033312700439d5ca3a8011649947e:x-oauth-basic@github.com/JelteDirks/bsb-typings.git"
-  },
+  "homepage": "https://github.com/JelteDirks/helper#readme",
+  "dependencies": {},
   "devDependencies": {
+    "@bsb/standard-ol-types": "^1.0.4",
     "@types/jest": "^23.3.9",
     "@webpack-cli/init": "^0.1.3",
     "babel-core": "^6.26.3",
