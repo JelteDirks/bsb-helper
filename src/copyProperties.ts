@@ -1,17 +1,17 @@
 import {setProperty} from "./setProperty";
 import {isType} from "./isType";
 
-export function copyProperties(original: object, copy: object): any {
+export function copyProperties(target: object, source: object): any {
 
-    if (isType.isUndefined(copy)) throw Error("Cannot copy properties to a non-existing object. Make sure you check object before copying.");
-    if (isType.isUndefined(original)) return copy;
+    if (isType.isUndefined(source)) throw Error("Cannot copy properties to a non-existing object. Make sure you check object before copying.");
+    if (isType.isUndefined(target)) return source;
 
-    const keys = Object.keys(original);
+    const keys = Object.keys(target);
 
     keys.forEach(function (key) {
-        if (!original.hasOwnProperty(key)) return;
-        setProperty(copy, key, original[key]);
+        if (!target.hasOwnProperty(key)) return;
+        setProperty(source, key, target[key]);
     });
 
-    return copy;
+    return source;
 }
