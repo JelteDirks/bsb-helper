@@ -16,45 +16,45 @@ test('no copy', () => {
 });
 
 test('override', () => {
-    let x = {name: 'jelte'};
-    let y = {name: 'peter'};
-    y = copyProperties(x, y);
-    let z = {name: 'jelte'};
-    expect(y).toMatchObject(z);
+    let target = {name: 'jelte'};
+    let source = {name: 'peter'};
+    copyProperties(target, source);
+    let expected = {name: 'peter'};
+    expect(target).toMatchObject(expected);
 });
 
 test('undefined original', () => {
-    let x = {name: 'jelte'};
-    x = copyProperties(undefined, x);
-    let y = {name: 'jelte'};
-    expect(x).toMatchObject(y);
+    let source = {name: 'jelte'};
+    source = copyProperties(source, undefined);
+    let expected = {name: 'jelte'};
+    expect(source).toMatchObject(expected);
 });
 
 test('undefined copy', () => {
     expect(() => {
-        copyProperties({}, undefined);
+        copyProperties(undefined, {});
     }).toThrowError(Error("Cannot copy properties to a non-existing object. Make sure you check object before copying."));
 });
 
 test('class copy', () => {
-    class X {
+    class Source {
         public name = "jelte";
     }
 
-    class Y {
+    class Target {
         public age = 10;
     }
 
-    class Z {
+    class Expected {
         public name = "jelte";
         public age = 10;
     }
 
-    let x = new X();
-    let y = new Y();
-    let z = new Z();
+    let source = new Source();
+    let target = new Target();
+    let expected = new Expected();
 
-    copyProperties(x, y);
+    copyProperties( target, source);
 
-    expect(y).toMatchObject(z);
+    expect(target).toMatchObject(expected);
 });

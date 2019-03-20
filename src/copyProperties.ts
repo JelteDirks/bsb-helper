@@ -3,15 +3,15 @@ import {isType} from "./isType";
 
 export function copyProperties(target: object, source: object): any {
 
-    if (isType.isUndefined(source)) throw Error("Cannot copy properties to a non-existing object. Make sure you check object before copying.");
-    if (isType.isUndefined(target)) return source;
+    if (isType.isUndefined(target)) throw "Cannot copy properties to a non-existing object. Make sure you check object before copying.";
+    if (isType.isUndefined(source)) return target;
 
-    const keys = Object.keys(target);
+    const keys = Object.keys(source);
 
     keys.forEach(function (key) {
-        if (!target.hasOwnProperty(key)) return;
-        setProperty(source, key, target[key]);
+        if (!source.hasOwnProperty(key)) return;
+        setProperty(target, key, source[key]);
     });
 
-    return source;
+    return target;
 }
