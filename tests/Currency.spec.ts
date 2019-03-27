@@ -1,31 +1,54 @@
 import {Currency} from "../src/Currency";
 
-let x = new Currency(',', '10.000,00');
+interface TestCase {
+    actual: Currency;
+    asFloat: number;
+    asFormatted: string;
+}
 
-test('basic', () => {
-    expect(x.getInitialValue()).toMatch('10.000,00');
-    expect(x.value).toMatch('10.000,00');
-});
+const tests: TestCase[] = [
+    {
+        actual: new Currency(10, ","),
+        asFloat: 10,
+        asFormatted: "10,00"
+    },
+    {
+        actual: new Currency("10,50", ","),
+        asFloat: 10.50,
+        asFormatted: "10,50"
+    },
+    {
+        actual: new Currency(-10, ","),
+        asFloat: -10,
+        asFormatted: "-10,00"
+    },
+    {
+        actual: new Currency("-10,49", ","),
+        asFloat: -10.49,
+        asFormatted: "-10,49"
+    },
+    {
+        actual: new Currency(10.29, ","),
+        asFloat: 10.29,
+        asFormatted: "10,29"
+    },
+    {
+        actual: new Currency(-10.99, ","),
+        asFloat: -10.99,
+        asFormatted: "-10,99"
+    }
+];
 
-test('no trail', () => {
-    expect(x.noTrail()).toMatch('10.000');
-});
+describe("currency test", () => {
+    tests.forEach((c: TestCase) => {
+        it("should match float", () => {
+            expect(c.actual.value).toEqual(c.asFloat);
+        });
+    });
 
-test('positive str', () => {
-    expect(x.positive).toBeTruthy();
-});
-
-test('negative str', () => {
-    let x = new Currency(',', '-10.000');
-    expect(x.positive).toBeFalsy();
-});
-
-test('positive num', () => {
-    let x = new Currency(',', 10);
-    expect(x.positive).toBeTruthy();
-});
-
-test('negative num', () => {
-    let x = new Currency(',', -10);
-    expect(x.positive).toBeFalsy();
+    tests.forEach((c: TestCase) => {
+        it("should match formatted", () => {
+            expect(c.actual.formatted(",")).toEqual(c.asFormatted);
+        })
+    });
 });
