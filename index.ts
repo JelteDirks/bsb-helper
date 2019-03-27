@@ -1,85 +1,35 @@
-import {pad} from "./src/pad";
-import {Pipe} from "./src/Pipe";
-import {prettyPrint} from "./src/prettyPrint";
-import {nonEmptyProperty} from "./src/nonEmptyProperty";
-import {listProperties} from "./src/listProperties";
-import {isType} from "./src/isType";
-import {isLeapYear} from "./src/isLeapYear";
-import {filterEmptyProperties} from "./src/filterEmptyProperties";
-import {Currency} from "./src/Currency";
-import {cleanEuroFromQuestion, needsEuroCleaning, addEuroToAnswer} from "./src/cleanEuro";
-import {arrayFind} from "./src/arrayFind";
-import {dateDifference} from "./src/dateDifference";
-import {millisToDays} from "./src/millisToDays";
-import {stringToDate} from "./src/stringToDate";
-import {Element, ElementData} from "./src/classes/Element/Element";
-import {Attribute, AttributeData} from "./src/classes/Element/Attribute";
-import {filterOutChar} from "./src/filterOutChar";
-import {filterOutNumbers} from "./src/filterOutNumbers";
-import {keepChar} from "./src/keepChar";
-import {FORMS, FormInfo} from "./src/FORMS";
-import {labelFinder, LabelFinderResults} from "./src/labelFinder";
-import {PAKKETGEGEVENS, PakketoverzichtData, CheckObject, POLISGEGEVENS, VERZEKERINGNEMER} from "./src/PAKKETGEGEVENS";
-import {toArray} from "./src/toArray";
-import {fieldFinder} from "./src/fieldFinder";
-import {Log, log, LogMessage} from "./src/classes/Log";
-import {onlyNumbers} from "./src/onlyNumbers";
-import {charIsNumber} from "./src/charIsNumber";
-import {isBetween} from "./src/isBetween";
-import {keepNumbers} from "./src/keepNumbers";
-import {stringCurrencyToNumber} from "./src/stringCurrencyToNumber";
-import {keepCapitals} from "./src/keepCapitals";
-import {setProperty} from "./src/setProperty";
-import {copyProperties} from "./src/copyProperties";
-import {templateLabelFiller} from "./src/templateLabelFiller";
-import {Map} from "./src/classes/Map";
-
-export {
-    pad,
-    Pipe,
-    prettyPrint,
-    nonEmptyProperty,
-    listProperties,
-    isType,
-    isLeapYear,
-    filterEmptyProperties,
-    Currency,
-    cleanEuroFromQuestion,
-    needsEuroCleaning,
-    addEuroToAnswer,
-    arrayFind,
-    dateDifference,
-    millisToDays,
-    stringToDate,
-    ElementData,
-    Element,
-    AttributeData,
-    Attribute,
-    filterOutChar,
-    filterOutNumbers,
-    keepChar,
-    FORMS,
-    FormInfo,
-    labelFinder,
-    PAKKETGEGEVENS,
-    PakketoverzichtData,
-    CheckObject,
-    POLISGEGEVENS,
-    VERZEKERINGNEMER,
-    toArray,
-    fieldFinder,
-    log,
-    LogMessage,
-    Log,
-    onlyNumbers,
-    charIsNumber,
-    isBetween,
-    keepNumbers,
-    stringCurrencyToNumber,
-    keepCapitals,
-    setProperty,
-    copyProperties,
-    LabelFinderResults,
-    templateLabelFiller,
-    Map
-};
+export * from "./src/pad";
+export * from "./src/Pipe";
+export * from "./src/prettyPrint";
+export * from "./src/nonEmptyProperty";
+export * from "./src/listProperties";
+export * from "./src/isType";
+export * from "./src/isLeapYear";
+export * from "./src/filterEmptyProperties";
+export * from "./src/Currency";
+export * from "./src/cleanEuro";
+export * from "./src/arrayFind";
+export * from "./src/dateDifference";
+export * from "./src/millisToDays";
+export * from "./src/stringToDate";
+export * from "./src/classes/Element/Element";
+export * from "./src/classes/Element/Attribute";
+export * from "./src/filterOutChar";
+export * from "./src/filterOutNumbers";
+export * from "./src/keepChar";
+export * from "./src/FORMS";
+export * from "./src/labelFinder";
+export * from "./src/PAKKETGEGEVENS";
+export * from "./src/toArray";
+export * from "./src/fieldFinder";
+export * from "./src/classes/Log";
+export * from "./src/onlyNumbers";
+export * from "./src/charIsNumber";
+export * from "./src/isBetween";
+export * from "./src/keepNumbers";
+export * from "./src/stringCurrencyToNumber";
+export * from "./src/keepCapitals";
+export * from "./src/setProperty";
+export * from "./src/copyProperties";
+export * from "./src/templateLabelFiller";
+export * from "./src/classes/Map";
