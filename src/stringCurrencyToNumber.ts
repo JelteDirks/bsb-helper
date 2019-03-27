@@ -1,6 +1,9 @@
 import {keepNumbers} from "./keepNumbers";
+import {isValidCurrency} from "./isValidCurrency";
 
 export function stringCurrencyToNumber(v: string, separator: string): number {
+
+    if (!isValidCurrency(v, separator)) throw "That is not a valid currency format: " + v;
 
     let negative = v.indexOf("-") === 0;
     let [pre, post] = v.split(separator);

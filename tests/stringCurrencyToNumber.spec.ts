@@ -7,11 +7,6 @@ test('basic', () => {
 
 test('no trail', () => {
     expect(stringCurrencyToNumber('10.000', ',')).toBe(10000);
-    expect(stringCurrencyToNumber('10.000,-', ',')).toBe(10000);
-});
-
-test('different separator', () => {
-    expect(stringCurrencyToNumber('10.000', '.')).toBe(10);
 });
 
 test('decimal only', () => {
