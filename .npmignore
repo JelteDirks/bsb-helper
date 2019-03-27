@@ -1,5 +1,5 @@
 .idea/*
-lib/*
+src/*
 node_modules/*
 tests/*
 jest.config.js
