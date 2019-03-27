@@ -1,39 +1,31 @@
 import {isType} from "./isType";
 import {numberToStringCurrency} from "./numberToStringCurrency";
+import {stringCurrencyToNumber} from "./stringCurrencyToNumber";
+import {isValidCurrency} from "./isValidCurrency";
 
 export class Currency {
 
-    readonly initialValue: string | number;
-    public positive: boolean;
-    private _value: string;
+    private val: number = 0;
 
-    constructor(private decimalSeparator: string, initialValue?: string | number) {
-        this.initialValue = initialValue;
-
-        if (isType.isNumber(initialValue)) {
-            this.positive = (initialValue >= 0);
-            this._value = numberToStringCurrency(<number>initialValue, decimalSeparator);
+    constructor(private readonly initialVal: number | string, sep: string) {
+        if (isType.isString(initialVal)) {
+            if (!isValidCurrency(<string>initialVal, sep)) throw "That is not a valid currency format" + initialVal;
+            this.val = stringCurrencyToNumber(<string>initialVal, sep);
         } else {
-            this.positive = String.prototype.indexOf.call(initialValue, '-') === -1;
-            this._value = <string>initialValue;
+            this.val = <number>initialVal;
         }
     }
 
-    public noTrail(): string {
-        const re = new RegExp(`${this.decimalSeparator}[.]*`);
-        return this._value.replace(re, '');
+    public formatted(sep: string) {
+        return numberToStringCurrency(this.val, sep);
     }
 
-    public getInitialValue(): string {
-        return String(this.initialValue);
+    public get value() {
+        return this.val;
     }
 
-    get value(): string {
-        return this._value;
-    }
-
-    set value(v: string) {
-        this._value = v;
+    public set value(v: number) {
+        this.val = v;
     }
 }
 
