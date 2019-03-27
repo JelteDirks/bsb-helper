@@ -1,6 +1,6 @@
 {
   "name": "@bsb/helper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Helper functions for bsb projects",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
