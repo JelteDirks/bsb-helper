@@ -7,11 +7,12 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --config jest.config.js",
-    "bundle": "webpack --config webpack.dev.js"
+    "bundle": "webpack --config webpack.dev.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JelteDirks/helper.git"
+    "url": "https://github.com/JelteDirks/helper.git"
   },
   "keywords": [],
   "author": {
