@@ -28,6 +28,7 @@ export * from "./src/charIsNumber";
 export * from "./src/isBetween";
 export * from "./src/keepNumbers";
 export * from "./src/stringCurrencyToNumber";
+export * from "./src/numberToStringCurrency";
 export * from "./src/keepCapitals";
 export * from "./src/setProperty";
 export * from "./src/copyProperties";
