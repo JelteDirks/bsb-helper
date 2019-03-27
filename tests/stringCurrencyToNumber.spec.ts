@@ -17,3 +17,11 @@ test('different separator', () => {
 test('decimal only', () => {
     expect(stringCurrencyToNumber('0,12', ',')).toBe(0.12);
 });
+
+test('negative dec', () => {
+    expect(stringCurrencyToNumber('-10,30', ',')).toBe(-10.30);
+});
+
+test('negative reg', () => {
+    expect(stringCurrencyToNumber('-10', ',')).toBe(-10);
+});
