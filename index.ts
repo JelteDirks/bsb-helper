@@ -35,3 +35,4 @@ export * from "./src/copyProperties";
 export * from "./src/templateLabelFiller";
 export * from "./src/classes/Map";
 export * from "./src/isValidCurrency";
+export * from "./src/removeLeadingCharacters";
