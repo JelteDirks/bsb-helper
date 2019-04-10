@@ -1,6 +1,6 @@
 import {addEuroToAnswer, cleanEuroFromQuestion, needsEuroCleaning} from "../src/cleanEuro";
 
-test('questionTypeCheck euro', () => {
+test('add euro', () => {
     expect(addEuroToAnswer('10.000,00')).toMatch('€ 10.000,00');
 });
 
