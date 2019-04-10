@@ -11,7 +11,7 @@ function addTwo(value) {
 let pipe = new Pipe(3); // initialize a new pipe with a value
 pipe.setValue(1); // or set value manually by calling setValue().
 
-pipe.add(addTwo); // <-- CORRECT: add a function to the pipe. (WITHOUT PARENTHESES).
+pipe.add(addTwo); questionTypeCheck
 pipe.add(addTwo()); // <-- WRONG: function should be passed as argument, not called.
 
 pipe.run(); // run all functions in the order that they are added.
