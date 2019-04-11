@@ -7,3 +7,11 @@ test('upper case replacement', () => {
 test('basic replacement', () => {
     expect(prettyPrint('jelte_dirks')).toBe('Jelte dirks');
 });
+
+test('Replace x', () => {
+    expect(prettyPrint('x__dit_is_een_string')).toBe('Dit is een string');
+});
+
+test('Replace multiple', () => {
+    expect(prettyPrint('x__is_dit_een___procent___string__vraag__')).toBe('Is dit een % string?');
+});
