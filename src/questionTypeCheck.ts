@@ -1,23 +1,9 @@
-export function questionTypeCheck(name: string, value: string): string|undefined {
+export function questionTypeCheck(name: string): string {
 
-    if (value == '') {
-        return;
-    }
-    if (/^euro__/.test(name)) {
+    if (/^euro__/.test(name)) return 'euro';
+    if (/^x__/.test(name)) return 'percentage';
+    if (/^jaar__/.test(name)) return 'jaar';
+    if (/^km__/.test(name)) return 'km';
 
-        return 'euro';
-    } else if (/^x__/.test(name)) {
-        let original_name = name.replace(/^x__/, '');
-        return 'percent';
-    } else if (/^jaar__/.test(name)) {
-        let original_name = name.replace(/^jaar__/, '');
-        return 'jaar';
-    } else if (/^km__/.test(name)) {
-        let original_name = name.replace(/^km__/, '');
-        return 'km';
-    } else if (/^mainswitch_/.test(name) || /^status_/.test(name)) {
-        return;
-    } else {
-        return 'default';
-    }
+    return 'default';
 }
