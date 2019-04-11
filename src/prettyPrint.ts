@@ -1,6 +1,6 @@
 export function prettyPrint(value: string): string {
 
-    let regex = /^(x|jaar|km)__/g;
+    let regex = /^(x|jaar|km|euro)__/g;
     value = value.replace(regex, '');
     value = value.replace(/__procent__/g, '%');
     value = value.replace(/__vraag__/g, '?');

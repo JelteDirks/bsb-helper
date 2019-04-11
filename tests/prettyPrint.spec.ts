@@ -15,3 +15,10 @@ test('Replace x', () => {
 test('Replace multiple', () => {
     expect(prettyPrint('x__is_dit_een___procent___string__vraag__')).toBe('Is dit een % string?');
 });
+
+
+test('Replace euro', () => {
+    expect(prettyPrint('euro__is_dit_een___procent___string__vraag__')).toBe('Is dit een % string?');
+});
+
+
