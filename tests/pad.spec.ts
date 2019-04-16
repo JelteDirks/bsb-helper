@@ -11,3 +11,7 @@ test('length overflow', () => {
 test('character length overflow', () => {
     expect(pad('0101', '01', 4)).toBe('0101');
 });
+
+test('character length overflow +1', () => {
+    expect(pad('0101', '01', 5)).toBe('0101');
+});
