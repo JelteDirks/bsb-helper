@@ -18,9 +18,7 @@ test('found', () => {
         id: 2
     };
 
-    expect(arrayFind(testObject, (e) => {
-        return e.id > 1;
-    })).toMatchObject(testResult);
+    expect(arrayFind(testObject, (e) => e.id > 1)).toMatchObject(testResult);
 });
 
 test('not found', () => {
