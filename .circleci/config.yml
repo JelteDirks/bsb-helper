@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: set npm
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run:
           name: install
           command: npm install
       - run:
