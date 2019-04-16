@@ -6,3 +6,4 @@ tests/*
 jest.config.js
 webpack.dev.js
 .DS_store
+.circleci/
