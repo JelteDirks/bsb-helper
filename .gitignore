@@ -4,3 +4,4 @@ dist
 lib
 src/**/*.js
 src/**/*.d.ts
+.DS_store
