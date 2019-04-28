@@ -24,5 +24,9 @@
   "include": [
     "./index.ts",
     "./src/**/*.ts"
-  ]
+  ],
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs"
+  }
 }
