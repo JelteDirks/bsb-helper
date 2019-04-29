@@ -13,7 +13,8 @@
     ],
     "types": [
       "standard-ol-types",
-      "jest"
+      "jest",
+      "node"
     ]
   },
   "exclude": [
