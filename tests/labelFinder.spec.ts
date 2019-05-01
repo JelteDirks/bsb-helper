@@ -39,10 +39,16 @@ describe('labelFinder', () => {
         expect(lf('10142o')).toMatch('10142 OMSCH');
     });
 
-    test('undefined should throw error', () => {
+    test('undefined label should throw error', () => {
         expect(() => {
             lf(void 0);
         }).toThrowError(Error('label to be found is undefined'));
+    });
+
+    test('no bound record should throw error', () => {
+        expect(() => {
+            labelFinder('10142c');
+        }).toThrowError(Error('bound record has no length property, check if it is a correct record'));
     });
 });
 

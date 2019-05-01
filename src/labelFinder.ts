@@ -3,10 +3,9 @@ import {arrayFind} from "./arrayFind";
 export type LabelFinderResults = string | number | Date | undefined;
 
 export function labelFinder(l: string): LabelFinderResults {
-    let rec: OLRecord[] = this;
     let attr = 'value';
 
-    if (typeof rec === 'undefined') throw'no record specified to labelFinder: ' + typeof rec;
+    if (!this.length) throw 'bound record has no length property, check if it is a correct record';
 
     if (typeof l !== 'string') throw 'label to be found is undefined';
 
@@ -18,7 +17,7 @@ export function labelFinder(l: string): LabelFinderResults {
 
     l = l.replace(/[co]/g, '');
 
-    const result: OLRecord = arrayFind(rec, (item: OLRecord) => {
+    const result: OLRecord = arrayFind(this, (item: OLRecord) => {
         return item.fields['number'] === `L${l}`;
     });
 
