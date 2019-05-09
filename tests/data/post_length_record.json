@@ -1,0 +1,239 @@
+{
+  "tables": {
+    "labels": {
+      "0": {
+        "tables": {
+          "length": 0
+        },
+        "fields": {
+          "value": "10000",
+          "number": "Formuliersoort",
+          "code": "",
+          "omsch": "",
+          "ExtraData": "",
+          "length": 5
+        },
+        "index": 0,
+        "id": 0,
+        "length": 4
+      },
+      "1": {
+        "tables": {
+          "length": 0
+        },
+        "fields": {
+          "value": "X0005",
+          "number": "Formuliernummer",
+          "code": "",
+          "omsch": "",
+          "ExtraData": "",
+          "length": 5
+        },
+        "index": 1,
+        "id": 0,
+        "length": 4
+      },
+      "2": {
+        "tables": {
+          "length": 0
+        },
+        "fields": {
+          "value": "00001",
+          "number": "Segment",
+          "code": "",
+          "omsch": "",
+          "ExtraData": "",
+          "length": 5
+        },
+        "index": 2,
+        "id": 0,
+        "length": 4
+      },
+      "length": 3
+    },
+    "polissen": {
+      "0": {
+        "tables": {
+          "polislabels": {
+            "0": {
+              "tables": {
+                "length": 0
+              },
+              "fields": {
+                "value": "",
+                "code": "02000",
+                "omsch": "Motorrijtuigen",
+                "number": "L10141",
+                "ExtraData": "",
+                "length": 5
+              },
+              "index": 0,
+              "id": 0,
+              "length": 4
+            },
+            "1": {
+              "tables": {
+                "length": 0
+              },
+              "fields": {
+                "value": "",
+                "code": "02100",
+                "omsch": "Personenauto",
+                "number": "L10142",
+                "ExtraData": "",
+                "length": 5
+              },
+              "index": 1,
+              "id": 0,
+              "length": 4
+            },
+            "2": {
+              "tables": {
+                "length": 0
+              },
+              "fields": {
+                "value": "",
+                "code": "00100",
+                "omsch": "NIEUWE PRODUCTINVOER",
+                "number": "L10136",
+                "ExtraData": "",
+                "length": 5
+              },
+              "index": 2,
+              "id": 0,
+              "length": 4
+            },
+            "length": 3
+          },
+          "dekkingen": {
+            "0": {
+              "tables": {
+                "dekkingslabels": {
+                  "0": {
+                    "tables": {
+                      "length": 0
+                    },
+                    "fields": {
+                      "value": "",
+                      "code": "02010",
+                      "omsch": "W.A.",
+                      "number": "L99042",
+                      "ExtraData": "",
+                      "length": 5
+                    },
+                    "index": 0,
+                    "id": 0,
+                    "length": 4
+                  },
+                  "1": {
+                    "tables": {
+                      "length": 0
+                    },
+                    "fields": {
+                      "value": "35,92",
+                      "code": "",
+                      "omsch": "",
+                      "number": "L10019",
+                      "ExtraData": "",
+                      "length": 5
+                    },
+                    "index": 1,
+                    "id": 0,
+                    "length": 4
+                  },
+                  "length": 2
+                }
+              },
+              "fields": {
+                "dekking_code": "02010",
+                "dekking_naam": "W.A.",
+                "premie": "35,92",
+                "ExtraData": "",
+                "length": 4
+              },
+              "index": 0,
+              "id": 0,
+              "length": 4
+            },
+            "length": 1
+          },
+          "length": 2
+        },
+        "fields": {
+          "branche_code": "02100",
+          "branche_naam": "Personenauto",
+          "wijzigingsreden_code": "00002",
+          "wijzigingsreden_omschrijving": "Nieuwe polis",
+          "wijzigingsdatum_polis": "27-11-2017",
+          "datum": "23-05-2018",
+          "maatschappij_code": "D200",
+          "verzekeringsvorm": "00100",
+          "ExtraData": "",
+          "length": 9
+        },
+        "index": 0,
+        "id": 0,
+        "length": 4
+      },
+      "length": 1
+    },
+    "length": 2
+  },
+  "fields": {
+    "Dossiersoort": "Polisblad",
+    "FileOmschrijving": "Pakketpolis",
+    "FormOrderNr": "01",
+    "FormulierSoort": "10000",
+    "Formuliernummer": "X0005",
+    "Groenekaart": "NEE",
+    "IncassoTP": "2_BSB",
+    "MailFrom": "info@mijnfinancieeladvies.nl",
+    "MailTo": "aronkool@gmail.com",
+    "Omschrijving": "Pakketpolis",
+    "Pasje": "NEE",
+    "PerEmail": "2_EMAIL",
+    "Segment": "00001",
+    "agent_code": "00380",
+    "agent_naam": "Mijn Financieel Advies B.V.",
+    "agent_straat": "Ethaanstraat",
+    "agent_nummer": "1",
+    "agent_toevoeging": "",
+    "agent_postcode": "7463 PC",
+    "agent_plaats": "Rijssen",
+    "agent_telefoonnummer": "0548-543785",
+    "geadresseerde_naam": "A. Kool",
+    "geadresseerde_adres": "Pinksterbloem 7",
+    "geadresseerde_postcode": "7463 EJ  RIJSSEN",
+    "geadresseerde_naam_2e": "",
+    "geadresseerde_aanhef": "Geachte heer Kool,",
+    "geadresseerde_aanhef_code": "A",
+    "geadresseerde_tav_naam": "",
+    "geadresseerde_land": "",
+    "datum": "23 mei 2018",
+    "rood": "",
+    "blauw": "",
+    "groen": "",
+    "wijzigingsreden_pakket_code": "00098",
+    "wijzigingsreden_pakket_omschrijving": "Wijziging polis",
+    "website": "www.mijnfinancieeladvies.nl",
+    "Aantal_Pasjes": 0,
+    "post_digitaal": "Ja",
+    "polisnummer": "5268-155751",
+    "relatienummer": "64269",
+    "volgnummer": "80001",
+    "wijzigingsdatum_pakket": "1 juli 2018",
+    "wijzigingsdatum": "1 juli 2018",
+    "betalingskenmerk": "",
+    "incassantID": "NL05ZZZ600121880000",
+    "Voorbrief": "",
+    "assurantiebelasting": "13,26",
+    "periodieke_incassokosten": "1,00",
+    "incasso_periode": "maand",
+    "premie_totaal": "76,46",
+    "ExtraData": "",
+    "length": 51
+  },
+  "index": 1,
+  "id": 0,
+  "length": 4
+}

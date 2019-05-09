@@ -13,7 +13,8 @@
     ],
     "types": [
       "standard-ol-types",
-      "jest"
+      "jest",
+      "node"
     ]
   },
   "exclude": [
@@ -24,5 +25,9 @@
   "include": [
     "./index.ts",
     "./src/**/*.ts"
-  ]
+  ],
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs"
+  }
 }

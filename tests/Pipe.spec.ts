@@ -17,7 +17,7 @@ test('basic chaining', () => {
     }
 
     let p = new Pipe(0);
-    p.add(addX);
+    p.addFunction(addX);
     expect(p.getValue()).toBe(0);
     p.run();
     expect(p.getValue()).toBe(10);

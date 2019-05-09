@@ -38,3 +38,4 @@ export * from "./src/isValidCurrency";
 export * from "./src/removeLeadingCharacters";
 export * from "./src/questionTypeCheck";
 export * from "./src/replaceFields";
+export * from "./src/addLength";
