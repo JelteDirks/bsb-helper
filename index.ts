@@ -39,4 +39,5 @@ export * from "./src/removeLeadingCharacters";
 export * from "./src/questionTypeCheck";
 export * from "./src/replaceFields";
 export * from "./src/addLength";
-export * from  "./src/wrapDate";
+export * from "./src/wrapDate";
+export * from "./src/convertCheckboxValue";
