@@ -1,4 +1,4 @@
-import {convertCheckboxValue} from "../../src/convertCheckboxValue";
+import {convertCheckboxValue} from "../src/convertCheckboxValue";
 
 describe('convert checkbox values', () => {
 
