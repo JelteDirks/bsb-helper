@@ -4,6 +4,7 @@ export function prettyPrint(value: string): string {
     value = value.replace(regex, '');
     value = value.replace(/__procent__/g, '%');
     value = value.replace(/__vraag__/g, '?');
+    value = value.replace(/__punt__/g, '.');
     value = value.replace(/_/g, ' ');
     value = value.substring(0,1).toUpperCase()+value.substring(1, value.length);
 
