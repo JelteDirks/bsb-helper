@@ -1,8 +1,7 @@
-.idea/*
-src/*
-index.ts
-node_modules/*
-tests/*
+.idea/
+src/
+node_modules/
+tests/
 jest.config.js
 webpack.dev.js
 .DS_store

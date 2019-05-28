@@ -5,6 +5,7 @@
     "noImplicitAny": false,
     "sourceMap": false,
     "declaration": true,
+    "rootDir": "./src",
     "outDir": "lib",
     "moduleResolution": "node",
     "typeRoots": [
