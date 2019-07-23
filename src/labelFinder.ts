@@ -7,7 +7,10 @@ export function labelFinder(l: string): LabelFinderResults {
 
     if (!this.length) throw 'bound record has no length property, check if it is a correct record';
 
-    if (typeof l !== 'string') throw 'label to be found is undefined';
+    if (typeof l !== 'string') {
+        const x = new Error();
+        throw 'label to be found is undefined' + x.stack;
+    }
 
     if (l.indexOf('c') > -1) {
         attr = 'code';

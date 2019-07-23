@@ -1,9 +1,10 @@
-.idea/*
-src/*
+.idea/
+src/
 index.ts
-node_modules/*
-tests/*
+node_modules/
+tests/
 jest.config.js
 webpack.dev.js
 .DS_store
 .circleci/
+docs/
