@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -rf ./lib",
     "build": "tsc",
-    "test": "jest --config jest.config.js",
+    "test": "jest",
     "prepublish": "npm run build",
     "postpublish": "npm run clean"
   },
