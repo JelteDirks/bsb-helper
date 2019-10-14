@@ -41,3 +41,5 @@ export * from "./src/replaceFields";
 export * from "./src/addLength";
 export * from "./src/wrapDate";
 export * from "./src/convertCheckboxValue";
+export * from "./src/strToHex";
+export * from "./src/hexToStr";
