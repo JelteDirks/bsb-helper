@@ -1,6 +1,6 @@
 export class Map {
 
-    private internals = {};
+    public internals = {};
 
     public set(key: string | number, value: any) {
         this.internals[key] = value;
