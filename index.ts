@@ -44,3 +44,4 @@ export * from "./src/convertCheckboxValue";
 export * from "./src/strToHex";
 export * from "./src/hexToStr";
 export * from "./src/flatten";
+export * from "./src/findIconName"
