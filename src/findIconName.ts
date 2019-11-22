@@ -145,7 +145,8 @@ export function findIconName(branchCode:string): string {
             icon: "computer",
             iconNumber: "24",
             branches: [
-                "3600"
+                "3600",
+                "5901"
             ]
         },
         {
@@ -247,13 +248,6 @@ export function findIconName(branchCode:string): string {
             iconNumber: "38",
             branches: [
                 "5900"
-            ]
-        },
-        {
-            icon: "computer",
-            iconNumber: "39",
-            branches: [
-                "5901"
             ]
         },
         {
