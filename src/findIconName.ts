@@ -86,6 +86,13 @@ export function findIconName(branchCode:string): string {
             ]
         },
         {
+            icon: "auto-met-pech",
+            iconNumber: "15",
+            branches: [
+                "3923"
+            ]
+        },
+        {
             icon: "auto-op-brug-onder-dag",
             iconNumber: "16",
             branches: [
@@ -224,7 +231,8 @@ export function findIconName(branchCode:string): string {
             icon: "stoel-en-lamp",
             iconNumber: "35",
             branches: [
-                "5600"
+                "5600",
+                "5615"
             ]
         },
         {
@@ -248,6 +256,15 @@ export function findIconName(branchCode:string): string {
             iconNumber: "38",
             branches: [
                 "5900"
+            ]
+        },
+        {
+            icon: "hamer",
+            iconNumber: "39",
+            branches: [
+                "6300",
+                "6305",
+                "6310"
             ]
         },
         {
