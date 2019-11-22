@@ -11,7 +11,10 @@ export function findIconName(branchCode:string): string {
             icon: "man-met-gebroken-arm",
             iconNumber: "03",
             branches: [
-                "1100"
+                "1100",
+                "1122",
+                "1510",
+                "1511"
             ]
         },
         {
@@ -22,10 +25,23 @@ export function findIconName(branchCode:string): string {
             ]
         },
         {
+            icon: "ehbo-koffer-euro",
+            iconNumber: "05",
+            branches: [
+                "1500"
+            ]
+        },
+        {
             icon: "auto",
             iconNumber: "06",
             branches: [
-                "2100"
+                "2100",
+                "2101",
+                "2102",
+                "2103",
+                "2110",
+                "2111",
+                "9008"
             ]
         },
         {
@@ -40,14 +56,16 @@ export function findIconName(branchCode:string): string {
             iconNumber: "08",
             branches: [
                 "2106",
-                "2500"
+                "2500",
+                "2501"
             ]
         },
         {
             icon: "caravan",
             iconNumber: "09",
             branches: [
-                "2200"
+                "2200",
+                "2201"
             ]
         },
         {
@@ -68,7 +86,12 @@ export function findIconName(branchCode:string): string {
             icon: "bromfiets",
             iconNumber: "12",
             branches: [
-                "2300"
+                "2300",
+                "2301",
+                "2311",
+                "2312",
+                "2313",
+                "2350"
             ]
         },
         {
@@ -82,7 +105,8 @@ export function findIconName(branchCode:string): string {
             icon: "fiets",
             iconNumber: "14",
             branches: [
-                "2400"
+                "2400",
+                "2401"
             ]
         },
         {
@@ -110,7 +134,9 @@ export function findIconName(branchCode:string): string {
             icon: "bestelauto",
             iconNumber: "18",
             branches: [
-                "2700"
+                "2700",
+                "2701",
+                "2710"
             ]
         },
         {
@@ -131,7 +157,8 @@ export function findIconName(branchCode:string): string {
             icon: "rijdende-bestelauto",
             iconNumber: "21",
             branches: [
-                "3100"
+                "3100",
+                "3150"
             ]
         },
         {
@@ -153,7 +180,10 @@ export function findIconName(branchCode:string): string {
             iconNumber: "24",
             branches: [
                 "3600",
-                "5901"
+                "3611",
+                "5901",
+                "5902",
+                "5903"
             ]
         },
         {
@@ -174,7 +204,10 @@ export function findIconName(branchCode:string): string {
             icon: "golfspullen",
             iconNumber: "27",
             branches: [
-                "3800"
+                "3800",
+                "3801",
+                "3905",
+                "3906"
             ]
         },
         {
@@ -188,7 +221,13 @@ export function findIconName(branchCode:string): string {
             icon: "koffer",
             iconNumber: "29",
             branches: [
-                "3900"
+                "3900",
+                "3901",
+                "3908",
+                "3910",
+                "3922",
+                "3930",
+                "3999"
             ]
         },
         {
@@ -203,6 +242,8 @@ export function findIconName(branchCode:string): string {
             iconNumber: "31",
             branches: [
                 "5500",
+                "5510",
+                "5515",
                 "5810"
             ]
         },
@@ -217,7 +258,8 @@ export function findIconName(branchCode:string): string {
             icon: "kantoorgebouw",
             iconNumber: "33",
             branches: [
-                "5551"
+                "5551",
+                "5570"
             ]
         },
         {
@@ -240,6 +282,7 @@ export function findIconName(branchCode:string): string {
             iconNumber: "36",
             branches: [
                 "5700",
+                "5719",
                 "5800"
             ]
         },
@@ -271,35 +314,40 @@ export function findIconName(branchCode:string): string {
             icon: "gezin-in-handen",
             iconNumber: "40",
             branches: [
-                "6100"
+                "6100",
+                "6101"
             ]
         },
         {
             icon: "mannen-stropdas-in-handen",
             iconNumber: "41",
             branches: [
-                "6500"
+                "6500",
+                "6165"
             ]
         },
         {
             icon: "auto-met-gewond-mannetje",
             iconNumber: "42",
             branches: [
-                "6650"
+                "6650",
+                "6651",
+                "6652"
             ]
         },
         {
             icon: "huis-met-geld-en-percentage",
             iconNumber: "43",
             branches: [
-                "7000"
+                "70000"
             ]
         },
         {
             icon: "eurobiljet",
             iconNumber: "44",
             branches: [
-                "7100"
+                "7100",
+                "8500"
             ]
         },
         {
@@ -313,7 +361,25 @@ export function findIconName(branchCode:string): string {
             icon: "weegschaal",
             iconNumber: "46",
             branches: [
-                "9000"
+                "9000",
+                "9001",
+                "9002",
+                "9003",
+                "9006",
+                "9009",
+                "9100",
+                "9101",
+                "9102",
+                "9110",
+                "9200",
+                "9230",
+                "9231",
+                "9232",
+                "9242",
+                "9243",
+                "9244",
+                "9247",
+                "9500",
             ]
         }
     ];
