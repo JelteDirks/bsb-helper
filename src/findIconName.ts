@@ -12,6 +12,7 @@ export function findIconName(branchCode:string): string {
             iconNumber: "03",
             branches: [
                 "1100",
+                "1120",
                 "1122",
                 "1510",
                 "1511"
@@ -21,7 +22,10 @@ export function findIconName(branchCode:string): string {
             icon: "ehbo-koffer",
             iconNumber: "04",
             branches: [
-                "1200"
+                "1120",
+                "1200",
+                "1300",
+                "1303"
             ]
         },
         {
@@ -35,12 +39,16 @@ export function findIconName(branchCode:string): string {
             icon: "auto",
             iconNumber: "06",
             branches: [
+                "2000",
                 "2100",
                 "2101",
                 "2102",
                 "2103",
+                "2108",
+                "2109",
                 "2110",
                 "2111",
+                "2705",
                 "9008"
             ]
         },
@@ -65,14 +73,16 @@ export function findIconName(branchCode:string): string {
             iconNumber: "09",
             branches: [
                 "2200",
-                "2201"
+                "2201",
+                "2210"
             ]
         },
         {
             icon: "stacaravan",
             iconNumber: "10",
             branches: [
-                "2220"
+                "2220",
+                "5910"
             ]
         },
         {
@@ -88,10 +98,12 @@ export function findIconName(branchCode:string): string {
             branches: [
                 "2300",
                 "2301",
+                "2310",
                 "2311",
                 "2312",
                 "2313",
-                "2350"
+                "2350",
+                "2351"
             ]
         },
         {
@@ -105,6 +117,7 @@ export function findIconName(branchCode:string): string {
             icon: "fiets",
             iconNumber: "14",
             branches: [
+                "2305",
                 "2400",
                 "2401"
             ]
@@ -127,7 +140,8 @@ export function findIconName(branchCode:string): string {
             icon: "drie-autos",
             iconNumber: "17",
             branches: [
-                "2605"
+                "2605",
+                "2610"
             ]
         },
         {
@@ -136,7 +150,9 @@ export function findIconName(branchCode:string): string {
             branches: [
                 "2700",
                 "2701",
-                "2710"
+                "2710",
+                "2850",
+                "2911"
             ]
         },
         {
@@ -157,6 +173,7 @@ export function findIconName(branchCode:string): string {
             icon: "rijdende-bestelauto",
             iconNumber: "21",
             branches: [
+                "3000",
                 "3100",
                 "3150"
             ]
@@ -165,14 +182,20 @@ export function findIconName(branchCode:string): string {
             icon: "stelling-waar-pakje-afvalt",
             iconNumber: "22",
             branches: [
-                "3400"
+                "3400",
+                "3403",
+                "3404",
+                "3410"
             ]
         },
         {
             icon: "heftruck",
             iconNumber: "23",
             branches: [
-                "3500"
+                "3500",
+                "3501",
+                "3502",
+                "3503"
             ]
         },
         {
@@ -181,6 +204,8 @@ export function findIconName(branchCode:string): string {
             branches: [
                 "3600",
                 "3611",
+                "3660",
+                "5556",
                 "5901",
                 "5902",
                 "5903"
@@ -223,7 +248,9 @@ export function findIconName(branchCode:string): string {
             branches: [
                 "3900",
                 "3901",
+                "3903",
                 "3908",
+                "3909",
                 "3910",
                 "3922",
                 "3930",
@@ -242,6 +269,7 @@ export function findIconName(branchCode:string): string {
             iconNumber: "31",
             branches: [
                 "5500",
+                "5504",
                 "5510",
                 "5515",
                 "5810"
@@ -274,6 +302,7 @@ export function findIconName(branchCode:string): string {
             iconNumber: "35",
             branches: [
                 "5600",
+                "5611",
                 "5615"
             ]
         },
@@ -281,7 +310,9 @@ export function findIconName(branchCode:string): string {
             icon: "kapotte-bureaustoel",
             iconNumber: "36",
             branches: [
+                "5552",
                 "5700",
+                "5710",
                 "5719",
                 "5800"
             ]
@@ -314,6 +345,7 @@ export function findIconName(branchCode:string): string {
             icon: "gezin-in-handen",
             iconNumber: "40",
             branches: [
+                "6000",
                 "6100",
                 "6101"
             ]
@@ -322,7 +354,10 @@ export function findIconName(branchCode:string): string {
             icon: "mannen-stropdas-in-handen",
             iconNumber: "41",
             branches: [
+                "6200",
+                "6311",
                 "6500",
+                "6501",
                 "6165"
             ]
         },
@@ -346,6 +381,7 @@ export function findIconName(branchCode:string): string {
             icon: "eurobiljet",
             iconNumber: "44",
             branches: [
+                "7010",
                 "7100",
                 "8500"
             ]
@@ -354,6 +390,7 @@ export function findIconName(branchCode:string): string {
             icon: "kalender",
             iconNumber: "45",
             branches: [
+                "3310",
                 "8100"
             ]
         },
@@ -365,21 +402,46 @@ export function findIconName(branchCode:string): string {
                 "9001",
                 "9002",
                 "9003",
+                "9004",
                 "9006",
                 "9009",
+                "9012",
                 "9100",
                 "9101",
                 "9102",
                 "9110",
                 "9200",
+                "9210",
                 "9230",
                 "9231",
                 "9232",
+                "9233",
+                "9240",
                 "9242",
                 "9243",
                 "9244",
+                "9245",
+                "9246",
                 "9247",
-                "9500",
+                "9248",
+                "9249",
+                "9250",
+                "9260",
+                "9500"
+            ]
+        },
+        {
+            icon: "muzieknoot",
+            iconNumber: "47",
+            branches: [
+                "5610"
+            ]
+        },
+        {
+            icon: "computer-met-slot",
+            iconNumber: "48",
+            branches: [
+                "6550"
             ]
         }
     ];

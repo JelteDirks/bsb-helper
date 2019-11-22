@@ -22,7 +22,7 @@ describe('find icon name', () => {
         expect(findIconName('2400')).toMatch('14');
     });
 
-    test('should return document icon from car branch not known', () => {
-        expect(findIconName('2101')).toMatch('999');
+    test('should return car icon from car branch', () => {
+        expect(findIconName('2101')).toMatch('06');
     });
 });
