@@ -4,7 +4,9 @@ export function findIconName(branchCode:string): string {
             icon: "man-met-koffer",
             iconNumber: "02",
             branches: [
-                "110"
+                "110",
+                "9262",
+                "9263"
             ]
         },
         {
@@ -25,7 +27,13 @@ export function findIconName(branchCode:string): string {
                 "1120",
                 "1200",
                 "1300",
-                "1303"
+                "1303",
+                "1611",
+                "1612",
+                "1613",
+                "1614",
+                "1615",
+                "1616"
             ]
         },
         {
@@ -314,7 +322,9 @@ export function findIconName(branchCode:string): string {
                 "5700",
                 "5710",
                 "5719",
-                "5800"
+                "5730",
+                "5800",
+                "5801"
             ]
         },
         {
