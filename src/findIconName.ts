@@ -39,7 +39,8 @@ export function findIconName(branchCode:string): string {
             icon: "motor",
             iconNumber: "08",
             branches: [
-                "2106"
+                "2106",
+                "2500"
             ]
         },
         {
@@ -82,13 +83,6 @@ export function findIconName(branchCode:string): string {
             iconNumber: "14",
             branches: [
                 "2400"
-            ]
-        },
-        {
-            icon: "motor",
-            iconNumber: "15",
-            branches: [
-                "2500"
             ]
         },
         {
