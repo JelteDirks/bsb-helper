@@ -15,14 +15,14 @@ describe('find icon name', () => {
     });
 
     test('should return general document icon from unknown branch', () => {
-        expect(findIconName('1300')).toMatch('999');
+        expect(findIconName('800')).toMatch('999');
     });
 
     test('should return fiets icon', () => {
         expect(findIconName('2400')).toMatch('14');
     });
 
-    test('should return document icon from car branch not known', () => {
-        expect(findIconName('2101')).toMatch('999');
+    test('should return car icon from car branch', () => {
+        expect(findIconName('2101')).toMatch('06');
     });
 });
