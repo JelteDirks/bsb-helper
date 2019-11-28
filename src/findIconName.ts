@@ -1,4 +1,8 @@
 export function findIconName(branchCode:string): string {
+    const defaultIcon = '999';
+
+    if (!branchCode) return defaultIcon;
+
     const icons = [
         {
             icon: "man-met-koffer",
@@ -456,9 +460,10 @@ export function findIconName(branchCode:string): string {
         }
     ];
 
+    branchCode = branchCode.replace(/^0+/, '');
     for (let x of icons) {
         if (x.branches.indexOf(branchCode) >= 0) return x.iconNumber;
     }
 
-    return '999';
+    return defaultIcon;
 }

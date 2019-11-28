@@ -25,4 +25,8 @@ describe('find icon name', () => {
     test('should return car icon from car branch', () => {
         expect(findIconName('2101')).toMatch('06');
     });
+
+    test('should match with 3900 branch', () => {
+        expect(findIconName('03900')).toMatch('29');
+    });
 });
