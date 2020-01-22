@@ -1,4 +1,4 @@
-import {flatten} from "../../src/flatten";
+import {flatten} from "../src/flatten";
 
 describe('flatten arrays', () => {
 
