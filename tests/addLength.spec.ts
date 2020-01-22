@@ -36,7 +36,7 @@ describe('fn: add length property to object', () => {
     });
 
     test('full record', () => {
-        expect(addLength(require('./data/pre_length_record.json'))).toMatchObject(require('./data/post_length_record.json'));
+        expect(addLength(require('./resources/pre_length_record.json'))).toMatchObject(require('./resources/post_length_record.json'));
     });
 
     test('add length to empty', () => {
