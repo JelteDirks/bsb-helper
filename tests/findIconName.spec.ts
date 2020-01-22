@@ -15,7 +15,7 @@ describe('find icon name', () => {
     });
 
     test('should return general document icon from unknown branch', () => {
-        expect(findIconName('1300')).toMatch('999');
+        expect(findIconName('10293')).toMatch('999');
     });
 
     test('should return fiets icon', () => {
