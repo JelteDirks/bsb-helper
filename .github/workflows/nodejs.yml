@@ -1,0 +1,35 @@
+name: Node CI
+
+on:
+  pull_request:
+    branches: 
+      - release/*
+      - develop
+      - master
+
+jobs:
+  test:
+    name: Test JSON files with node version ${{ matrix.node_version }} and platform ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+        os: [ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Create .npmrc with auth token
+      run: echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" >> ~/.npmrc
+      env:
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+    - name: install dependencies and test
+      run: |
+        npm ci
+        npm test
+      env:
+        CI: true
