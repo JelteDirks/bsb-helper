@@ -9,7 +9,8 @@
     "build": "tsc",
     "test": "jest",
     "prepublish": "npm run build",
-    "postpublish": "npm run clean"
+    "postpublish": "npm run clean",
+    "docs": "npx run typedoc"
   },
   "repository": {
     "type": "git",
@@ -33,7 +34,7 @@
     "jest": "^24.7.1",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.0.3",
-    "typedoc": "^0.15.0",
-    "typescript": "^3.4.3"
+    "typedoc": "^0.15.8",
+    "typescript": "^3.7.5"
   }
 }

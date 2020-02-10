@@ -18,6 +18,18 @@ test('date & string comparison', () => {
 
 test('string without format', () => {
     expect(() => {
-        dateDifference('10-10-2018', new Date(2018, 9, 20))
+        dateDifference('10-10-2018', new Date(2018, 9, 20));
     }).toThrowError('can not use string dates without specifying format');
+});
+
+test('empty string should throw error', () => {
+    expect(() => {
+        dateDifference('', new Date(2018, 9, 20));
+    }).toThrowError(new RangeError('start date is an empty string'));
+});
+
+test('empty string should throw error', () => {
+    expect(() => {
+        dateDifference('10-10-2018', '');
+    }).toThrowError(new RangeError('end date is an empty string'));
 });
