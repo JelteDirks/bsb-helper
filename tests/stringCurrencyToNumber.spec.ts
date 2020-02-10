@@ -20,3 +20,7 @@ test('negative dec', () => {
 test('negative reg', () => {
     expect(stringCurrencyToNumber('-10', ',')).toBe(-10);
 });
+
+test('end with ,-', () => {
+    expect(stringCurrencyToNumber('100,-', ',')).toBe(100);
+});

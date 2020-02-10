@@ -45,3 +45,5 @@ export * from "./src/strToHex";
 export * from "./src/hexToStr";
 export * from "./src/flatten";
 export * from "./src/findIconName"
+export * from "./src/formatCurrency"
+export * from "./src/anvaSignCorrection"
