@@ -2,12 +2,23 @@ import {stringToDate} from "./stringToDate";
 import {millisToDays} from "./millisToDays";
 import {isType} from "./isType";
 
+/**
+ *
+ * @throws RangeError when startDate is an empty string
+ * @throws RangeError when endDate is an empty string
+ * @param {string|Date} startDate
+ * @param {string|Date} endDate
+ * @param {string|RegExp} format
+ */
 export function dateDifference(startDate: string | Date, endDate: string | Date, format?: string): number {
 
     let startDayMillis: number;
     let endDayMillis: number;
     let sDate: Date;
     let eDate: Date;
+
+    if (startDate === '') throw RangeError('start date is an empty string');
+    if (endDate === '') throw RangeError('end date is an empty string');
 
     if ((isType.isString(startDate) || isType.isString(endDate)) && !isType.isString(format)) throw new Error('can not use string dates without specifying format');
 
