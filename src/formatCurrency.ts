@@ -14,6 +14,9 @@ export function formatCurrency(value: string, valutaSign?: string): string {
     if (value.startsWith('-')) {
         positive = false;
         value = value.substring(1);
+    } else if (value.endsWith('-') && !value.endsWith(',-')) {
+        positive = false;
+        value = value.slice(0, value.length - 1);
     }
 
     let floatPart: number = 0;
