@@ -42,6 +42,10 @@ describe('format currency in nice local formatting', () => {
         expect(formatCurrency('1000,00-')).toMatch('-1.000,00')
     });
 
+    test('negative sign after currency with decimal and separator', () => {
+        expect(formatCurrency('1.618,62-')).toMatch('-1.618,62')
+    });
+
     test('negative number with comma', () => {
         expect(formatCurrency('-1000,80')).toMatch('-1.000,80')
     });
