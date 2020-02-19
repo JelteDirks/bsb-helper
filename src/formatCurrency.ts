@@ -50,7 +50,7 @@ function combineParts(intPart: number, floatPart: number): string {
     for (let i = iStr.length - 1; i >= 0; i--) {
         counter++;
         result = iStr[i] + result;
-        if ((counter % 3) === 0) {
+        if (((counter % 3) === 0) && (counter !== iStr.length)) {
             result = "." + result;
         }
     }
