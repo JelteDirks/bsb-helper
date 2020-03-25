@@ -50,6 +50,18 @@ describe('format currency in nice local formatting', () => {
         expect(formatCurrency('161,86')).toEqual('161,86')
     });
 
+    test('negative currency decimal starting with 0', () => {
+        expect(formatCurrency('-161,02')).toEqual('-161,02')
+    });
+
+    test('negative currency behind decimal starting with 0', () => {
+        expect(formatCurrency('161,02-')).toEqual('-161,02')
+    });
+
+    test('negative currency behind decimal', () => {
+        expect(formatCurrency('161,20-')).toEqual('-161,20')
+    });
+
     test('currency with decimal and separator 100k', () => {
         expect(formatCurrency('134.161,8')).toEqual('134.161,80')
     });

@@ -19,13 +19,11 @@ export function formatCurrency(value: string, valutaSign?: string): string {
         value = value.slice(0, value.length - 1);
     }
 
-    let floatPart: number = 0;
+    let floatPart: string = '0';
     if (/(.|,)-$/.test(value)) {
         value = value.replace(/(.|,)-$/, '');
-        floatPart = 0;
     } else if (/[.,][0-9]{1,2}$/.test(value)) {
-        let floatPartString: string = value.match(/[,.]([0-9]{1,2})$/)[1];
-        floatPart = Number(floatPartString);
+        floatPart = value.match(/[,.]([0-9]{1,2})$/)[1];
         value = value.replace(/[,.][0-9]{1,2}$/, '');
     }
 
@@ -36,9 +34,9 @@ export function formatCurrency(value: string, valutaSign?: string): string {
     return `${!!valutaSign ? valutaSign + ' ' : ''}${positive ? '' : '-'}${combineParts(intPart, floatPart)}`;
 }
 
-function combineParts(intPart: number, floatPart: number): string {
+function combineParts(intPart: number, floatPart: string): string {
     const iStr: string = String(intPart);
-    let fStr: string = String(floatPart);
+    let fStr: string = floatPart;
 
     if (fStr.length === 1) {
         fStr = fStr + '0';
