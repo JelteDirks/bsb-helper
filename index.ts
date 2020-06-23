@@ -47,3 +47,4 @@ export * from "./src/flatten";
 export * from "./src/findIconName"
 export * from "./src/formatCurrency"
 export * from "./src/anvaSignCorrection"
+export * from "./src/getFromRecord";
