@@ -3,8 +3,12 @@
  * @throws RangeError when the string is empty.
  * @param {string} sVal
  * @param {string|RegExp} format
+ * @returns {Date} if date an be converted
+ * @returns {null} if date is invalid
  */
-export function stringToDate(sVal: string, format: string | RegExp): Date {
+import {isValidDate} from "./isValidDate";
+
+export function stringToDate(sVal: string, format: string | RegExp): Date|null {
 
     if (sVal === '') {
         throw RangeError('empty string can not be converted to date');
@@ -17,6 +21,8 @@ export function stringToDate(sVal: string, format: string | RegExp): Date {
     } else {
         form = format;
     }
+
+    if (!isValidDate(sVal, form)) return null;
 
     const dayIndex = new RegExp('DD').exec(form).index;
     const monthIndex = new RegExp('MM').exec(form).index;
