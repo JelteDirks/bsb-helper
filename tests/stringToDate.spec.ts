@@ -14,3 +14,7 @@ test('empty string should throw error', () => {
     }).toThrowError(new RangeError('empty string can not be converted to date'));
 });
 
+test('weird date', () => {
+    expect(stringToDate('40-01-2018', 'DD-MM-YYYY')).toBeNull();
+});
+
