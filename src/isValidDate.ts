@@ -2,9 +2,9 @@ export function isValidDate(date: string, format: string):boolean {
 
     if (date === '') return false;
 
-    const dayIndex = new RegExp('DD').exec(format).index;
-    const monthIndex = new RegExp('MM').exec(format).index;
-    const yearIndex = new RegExp('YYYY').exec(format).index;
+    const dayIndex = new RegExp('DD').exec(format)?.index;
+    const monthIndex = new RegExp('MM').exec(format)?.index;
+    const yearIndex = new RegExp('YYYY').exec(format)?.index;
 
     const day = date.substr(dayIndex, 2);
     const month = date.substr(monthIndex, 2);
