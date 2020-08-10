@@ -1,4 +1,4 @@
-import {getFromTable} from "../src/getFromRecord";
+import {getFromRecord} from "../src/getFromRecord";
 
 const rec = {
     fields: {
@@ -43,20 +43,33 @@ const rec = {
     }
 }
 
+describe('getting values from record by path', () => {
 
-describe('getting values from OL tables', () => {
+    test('root field level', () => {
+        const value = getFromRecord('one', <OLRecord><any>rec);
+        expect(value).toBe('1');
 
-    test('level 1 table entry', () => {
-        const value = getFromTable(<OLRecord><any>rec.tables.first, 'three', '3');
-        expect(value).toHaveProperty('fields');
-        expect(value.fields.three).toBe('3');
+        const value2 = getFromRecord('two', <OLRecord><any>rec);
+        expect(value2).toBe('2');
     });
 
-    test('level 2 table entry', () => {
-        const t1 = getFromTable(<OLRecord><any>rec.tables.first, 'three', '3');
-        const t2 = getFromTable(t1.tables.second, 'five', '5');
-        expect(t2).toHaveProperty('fields');
-        expect(t2.fields.five).toBe('5');
+    test('first level table', () => {
+        const value = getFromRecord('first[three=3].four', <OLRecord><any>rec);
+        expect(value).toBe('4');
     });
 
+    test('second level table', () => {
+        const value = getFromRecord('first[three=33].second[five=55].six', <OLRecord><any>rec);
+        expect(value).toBe('66');
+    });
+
+    test('incorrect path', () => {
+        const value = getFromRecord('first[three=4].second[five=55].six', <OLRecord><any>rec);
+        expect(value).toBeNull();
+    });
+
+    test('non existing field', () => {
+        const value = getFromRecord('three', <OLRecord><any>rec);
+        expect(value).toBeNull();
+    });
 });
