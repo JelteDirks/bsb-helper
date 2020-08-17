@@ -1,9 +1,5 @@
-export function defaultSelectOption(results: QUERYResults) {
-    results.each(function () {
-
-        const q: QUERYResults = this;
-
-        q.append(`<option value="" disabled selected>Maak een keuze</option>`)
-
+export function defaultSelectOption(results: QUERYResults, message: string = 'Maak een keuze') {
+    results.each(function (this: QUERYResults) {
+        this.append(`<option value="" disabled selected>${message}</option>`)
     });
 }
