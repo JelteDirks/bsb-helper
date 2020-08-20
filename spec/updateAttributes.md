@@ -56,7 +56,8 @@ If you have the following html and script:
 ```
 ```typescript
 query('div').each(function(index) {
-    updateAttributes(query('input', this), ++index, 'name', '__i__'); // note that index gets incremented BEFORE passing
+    const allInputs = query('input', this);
+    updateAttributes(allInputs, ++index, 'name', '__i__'); // note that index gets incremented BEFORE passing
 });
 ```
 The html code will be updated as follows:
