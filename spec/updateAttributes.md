@@ -70,9 +70,8 @@ The html code will be updated as follows:
 ```text
 UPDATEATTRIBUTES(set, update, attributes, template)
 for each x in set:
-  all_attrs <- getAttributes(x)
   for each attr in attributes:
-    if attr not in all_attrs:
+    if not hasAttribute(x, attr):
       continue
     old_value <- getAttributeValue(x, attr)
     new_value <- replace(template, update, old_value)
