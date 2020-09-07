@@ -1,5 +1,6 @@
 .idea/
 src/
+spec/
 index.ts
 node_modules/
 tests/

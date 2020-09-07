@@ -1,0 +1,1890 @@
+{
+  "tables": {
+    "detail": {
+      "0": {
+        "tables": {},
+        "fields": {
+          "value": "03100",
+          "code": "",
+          "omsch": "",
+          "number": "Formuliersoort",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 0,
+        "id": 0
+      },
+      "1": {
+        "tables": {},
+        "fields": {
+          "value": "X9998",
+          "code": "",
+          "omsch": "",
+          "number": "Formuliernummer",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 1,
+        "id": 0
+      },
+      "2": {
+        "tables": {},
+        "fields": {
+          "value": "00004",
+          "code": "",
+          "omsch": "",
+          "number": "Segment",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 2,
+        "id": 0
+      },
+      "3": {
+        "tables": {},
+        "fields": {
+          "value": "Relatie",
+          "code": "",
+          "omsch": "",
+          "number": "Dossiersoort",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 3,
+        "id": 0
+      },
+      "4": {
+        "tables": {},
+        "fields": {
+          "value": "brief",
+          "code": "",
+          "omsch": "",
+          "number": "Filenaam",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 4,
+        "id": 0
+      },
+      "5": {
+        "tables": {},
+        "fields": {
+          "value": "TEST relatiegegevens verrijken",
+          "code": "",
+          "omsch": "",
+          "number": "Omschrijving",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 5,
+        "id": 0
+      },
+      "6": {
+        "tables": {},
+        "fields": {
+          "value": "01",
+          "code": "",
+          "omsch": "",
+          "number": "Volgnummer",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 6,
+        "id": 0
+      },
+      "7": {
+        "tables": {},
+        "fields": {
+          "value": "cotg",
+          "code": "",
+          "omsch": "",
+          "number": "Output",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 7,
+        "id": 0
+      },
+      "8": {
+        "tables": {},
+        "fields": {
+          "value": "Ja",
+          "code": "",
+          "omsch": "",
+          "number": "PublicatieRelatie",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 8,
+        "id": 0
+      },
+      "9": {
+        "tables": {},
+        "fields": {
+          "value": "Ja",
+          "code": "",
+          "omsch": "",
+          "number": "PublicatieAgent",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 9,
+        "id": 0
+      },
+      "10": {
+        "tables": {},
+        "fields": {
+          "value": "Nee",
+          "code": "",
+          "omsch": "",
+          "number": "PublicatieCollectiviteit",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 10,
+        "id": 0
+      },
+      "11": {
+        "tables": {},
+        "fields": {
+          "value": "Wendy",
+          "code": "",
+          "omsch": "",
+          "number": "L99102",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 11,
+        "id": 0
+      },
+      "12": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "00005",
+          "omsch": "Beheer",
+          "number": "L99518",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 12,
+        "id": 0
+      },
+      "13": {
+        "tables": {},
+        "fields": {
+          "value": "24 januari 2020",
+          "code": "",
+          "omsch": "",
+          "number": "L97020",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 13,
+        "id": 0
+      },
+      "14": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "WENDYB",
+          "omsch": "W. Broek",
+          "number": "L97103",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 14,
+        "id": 0
+      },
+      "15": {
+        "tables": {},
+        "fields": {
+          "value": "wendy.broek@bsbvolmachten.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L99052",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 15,
+        "id": 0
+      },
+      "16": {
+        "tables": {},
+        "fields": {
+          "value": "ict@bsbvolmachten.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L97235",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 16,
+        "id": 0
+      },
+      "17": {
+        "tables": {},
+        "fields": {
+          "value": "03100",
+          "code": "",
+          "omsch": "",
+          "number": "L97425",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 17,
+        "id": 0
+      },
+      "18": {
+        "tables": {},
+        "fields": {
+          "value": "X9998",
+          "code": "",
+          "omsch": "",
+          "number": "L97401",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 18,
+        "id": 0
+      },
+      "19": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "00017",
+          "omsch": "BSB Verzekeringen",
+          "number": "L00067",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 19,
+        "id": 0
+      },
+      "20": {
+        "tables": {},
+        "fields": {
+          "value": "00017",
+          "code": "",
+          "omsch": "",
+          "number": "L99001",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 20,
+        "id": 0
+      },
+      "21": {
+        "tables": {},
+        "fields": {
+          "value": "60012188",
+          "code": "",
+          "omsch": "",
+          "number": "L99002",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 21,
+        "id": 0
+      },
+      "22": {
+        "tables": {},
+        "fields": {
+          "value": "BSB Verzekeringen",
+          "code": "",
+          "omsch": "",
+          "number": "L99054",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 22,
+        "id": 0
+      },
+      "23": {
+        "tables": {},
+        "fields": {
+          "value": "Minister Ruysstraat",
+          "code": "",
+          "omsch": "",
+          "number": "L99063",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 23,
+        "id": 0
+      },
+      "24": {
+        "tables": {},
+        "fields": {
+          "value": "6",
+          "code": "",
+          "omsch": "",
+          "number": "L99064",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 24,
+        "id": 0
+      },
+      "25": {
+        "tables": {},
+        "fields": {
+          "value": "6162 XK",
+          "code": "",
+          "omsch": "",
+          "number": "L99066",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 25,
+        "id": 0
+      },
+      "26": {
+        "tables": {},
+        "fields": {
+          "value": "Geleen",
+          "code": "",
+          "omsch": "",
+          "number": "L99067",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 26,
+        "id": 0
+      },
+      "27": {
+        "tables": {},
+        "fields": {
+          "value": "Postbus",
+          "code": "",
+          "omsch": "",
+          "number": "L99055",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 27,
+        "id": 0
+      },
+      "28": {
+        "tables": {},
+        "fields": {
+          "value": "322",
+          "code": "",
+          "omsch": "",
+          "number": "L99056",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 28,
+        "id": 0
+      },
+      "29": {
+        "tables": {},
+        "fields": {
+          "value": "6160 AH",
+          "code": "",
+          "omsch": "",
+          "number": "L99058",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 29,
+        "id": 0
+      },
+      "30": {
+        "tables": {},
+        "fields": {
+          "value": "GELEEN",
+          "code": "",
+          "omsch": "",
+          "number": "L99060",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 30,
+        "id": 0
+      },
+      "31": {
+        "tables": {},
+        "fields": {
+          "value": "info@bsbverzekeringen.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L99005",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 31,
+        "id": 0
+      },
+      "32": {
+        "tables": {},
+        "fields": {
+          "value": "www.bsbverzekeringen.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L55004",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 32,
+        "id": 0
+      },
+      "33": {
+        "tables": {},
+        "fields": {
+          "value": "046-4230231",
+          "code": "",
+          "omsch": "",
+          "number": "L99007",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 33,
+        "id": 0
+      },
+      "34": {
+        "tables": {},
+        "fields": {
+          "value": "Nee",
+          "code": "",
+          "omsch": "",
+          "number": "L55018",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 34,
+        "id": 0
+      },
+      "35": {
+        "tables": {},
+        "fields": {
+          "value": "47",
+          "code": "",
+          "omsch": "",
+          "number": "L55014",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 35,
+        "id": 0
+      },
+      "36": {
+        "tables": {},
+        "fields": {
+          "value": "156",
+          "code": "",
+          "omsch": "",
+          "number": "L55015",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 36,
+        "id": 0
+      },
+      "37": {
+        "tables": {},
+        "fields": {
+          "value": "74",
+          "code": "",
+          "omsch": "",
+          "number": "L55016",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 37,
+        "id": 0
+      },
+      "38": {
+        "tables": {},
+        "fields": {
+          "value": "52633",
+          "code": "",
+          "omsch": "",
+          "number": "L00001",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 38,
+        "id": 0
+      },
+      "39": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "00010",
+          "omsch": "Particulier",
+          "number": "L00040",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 39,
+        "id": 0
+      },
+      "40": {
+        "tables": {},
+        "fields": {
+          "value": "Test Wendy NIET VERSTUREN AUB",
+          "code": "",
+          "omsch": "",
+          "number": "L00002",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 40,
+        "id": 0
+      },
+      "41": {
+        "tables": {},
+        "fields": {
+          "value": "W",
+          "code": "",
+          "omsch": "",
+          "number": "L00003",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 41,
+        "id": 0
+      },
+      "42": {
+        "tables": {},
+        "fields": {
+          "value": "wendy.broek@bsbvolmachten.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L99899",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 42,
+        "id": 0
+      },
+      "43": {
+        "tables": {},
+        "fields": {
+          "value": "Mevrouw A. ter Ter attentie van achternaam",
+          "code": "",
+          "omsch": "",
+          "number": "L99901",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 43,
+        "id": 0
+      },
+      "44": {
+        "tables": {},
+        "fields": {
+          "value": "W Test Wendy NIET VERSTUREN AUB",
+          "code": "",
+          "omsch": "",
+          "number": "L99902",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 44,
+        "id": 0
+      },
+      "45": {
+        "tables": {},
+        "fields": {
+          "value": "&",
+          "code": "",
+          "omsch": "",
+          "number": "L01040",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 45,
+        "id": 0
+      },
+      "46": {
+        "tables": {},
+        "fields": {
+          "value": "&",
+          "code": "",
+          "omsch": "",
+          "number": "L99505",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 46,
+        "id": 0
+      },
+      "47": {
+        "tables": {},
+        "fields": {
+          "value": "Sonnevelt 310 ABCD",
+          "code": "",
+          "omsch": "",
+          "number": "L99903",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 47,
+        "id": 0
+      },
+      "48": {
+        "tables": {},
+        "fields": {
+          "value": "3741 XW  BAARN",
+          "code": "",
+          "omsch": "",
+          "number": "L99904",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 48,
+        "id": 0
+      },
+      "49": {
+        "tables": {},
+        "fields": {
+          "value": "Sonnevelt",
+          "code": "",
+          "omsch": "",
+          "number": "L00008",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 49,
+        "id": 0
+      },
+      "50": {
+        "tables": {},
+        "fields": {
+          "value": "310",
+          "code": "",
+          "omsch": "",
+          "number": "L00009",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 50,
+        "id": 0
+      },
+      "51": {
+        "tables": {},
+        "fields": {
+          "value": "ABCD",
+          "code": "",
+          "omsch": "",
+          "number": "L01024",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 51,
+        "id": 0
+      },
+      "52": {
+        "tables": {},
+        "fields": {
+          "value": "3741 XW",
+          "code": "",
+          "omsch": "",
+          "number": "L00011",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 52,
+        "id": 0
+      },
+      "53": {
+        "tables": {},
+        "fields": {
+          "value": "BAARN",
+          "code": "",
+          "omsch": "",
+          "number": "L00010",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 53,
+        "id": 0
+      },
+      "54": {
+        "tables": {},
+        "fields": {
+          "value": "wendy.broek@bsbvolmachten.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L02402",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 54,
+        "id": 0
+      },
+      "55": {
+        "tables": {},
+        "fields": {
+          "value": "Ja",
+          "code": "",
+          "omsch": "",
+          "number": "L02201",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 55,
+        "id": 0
+      },
+      "56": {
+        "tables": {},
+        "fields": {
+          "value": "Testefactuur@email.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L03059",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 56,
+        "id": 0
+      },
+      "57": {
+        "tables": {},
+        "fields": {
+          "value": "awimail@bsbverzekeringen.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L09282",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 57,
+        "id": 0
+      },
+      "58": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "B",
+          "omsch": "Mevrouw",
+          "number": "L00005",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 58,
+        "id": 0
+      },
+      "59": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "B",
+          "omsch": "Geachte mevrouw Test Wendy NIET VERSTUREN AUB,",
+          "number": "L00006",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 59,
+        "id": 0
+      },
+      "60": {
+        "tables": {},
+        "fields": {
+          "value": "Geachte mevrouw Ter Ter attentie van achternaam,",
+          "code": "",
+          "omsch": "",
+          "number": "L99906",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 60,
+        "id": 0
+      },
+      "61": {
+        "tables": {},
+        "fields": {
+          "value": "W Test Wendy NIET VERSTUREN AUB",
+          "code": "",
+          "omsch": "",
+          "number": "L01028",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 61,
+        "id": 0
+      },
+      "62": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "V",
+          "omsch": "Vrouw",
+          "number": "L00044",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 62,
+        "id": 0
+      },
+      "63": {
+        "tables": {},
+        "fields": {
+          "value": "19-10-1986",
+          "code": "",
+          "omsch": "",
+          "number": "L00029",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 63,
+        "id": 0
+      },
+      "64": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "00118",
+          "omsch": "Bkmacht met pakketnota per hfdvvdat",
+          "number": "L00045",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 64,
+        "id": 0
+      },
+      "65": {
+        "tables": {},
+        "fields": {
+          "value": "NL13 TEST 0123 4567 89",
+          "code": "",
+          "omsch": "",
+          "number": "L03016",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 65,
+        "id": 0
+      },
+      "66": {
+        "tables": {},
+        "fields": {
+          "value": "Nee",
+          "code": "",
+          "omsch": "",
+          "number": "L00016",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 66,
+        "id": 0
+      },
+      "67": {
+        "tables": {},
+        "fields": {
+          "value": "0612345678",
+          "code": "",
+          "omsch": "",
+          "number": "L00013",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 67,
+        "id": 0
+      },
+      "68": {
+        "tables": {},
+        "fields": {
+          "value": "Test Wendy NIET VERSTUREN AUB",
+          "code": "",
+          "omsch": "",
+          "number": "L00002",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 68,
+        "id": 0
+      },
+      "69": {
+        "tables": {},
+        "fields": {
+          "value": "&",
+          "code": "",
+          "omsch": "",
+          "number": "L01040",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 69,
+        "id": 0
+      },
+      "70": {
+        "tables": {},
+        "fields": {
+          "value": "W",
+          "code": "",
+          "omsch": "",
+          "number": "L00003",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 70,
+        "id": 0
+      },
+      "71": {
+        "tables": {},
+        "fields": {
+          "value": "19-10-1986",
+          "code": "",
+          "omsch": "",
+          "number": "L00029",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 71,
+        "id": 0
+      },
+      "72": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "V",
+          "omsch": "Vrouw",
+          "number": "L00044",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 72,
+        "id": 0
+      },
+      "73": {
+        "tables": {},
+        "fields": {
+          "value": "Sonnevelt",
+          "code": "",
+          "omsch": "",
+          "number": "L00008",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 73,
+        "id": 0
+      },
+      "74": {
+        "tables": {},
+        "fields": {
+          "value": "310",
+          "code": "",
+          "omsch": "",
+          "number": "L00009",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 74,
+        "id": 0
+      },
+      "75": {
+        "tables": {},
+        "fields": {
+          "value": "ABCD",
+          "code": "",
+          "omsch": "",
+          "number": "L01024",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 75,
+        "id": 0
+      },
+      "76": {
+        "tables": {},
+        "fields": {
+          "value": "3741 XW",
+          "code": "",
+          "omsch": "",
+          "number": "L00011",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 76,
+        "id": 0
+      },
+      "77": {
+        "tables": {},
+        "fields": {
+          "value": "BAARN",
+          "code": "",
+          "omsch": "",
+          "number": "L00010",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 77,
+        "id": 0
+      },
+      "78": {
+        "tables": {},
+        "fields": {
+          "value": "0612345678",
+          "code": "",
+          "omsch": "",
+          "number": "L00013",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 78,
+        "id": 0
+      },
+      "79": {
+        "tables": {},
+        "fields": {
+          "value": "wendy.broek@bsbvolmachten.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L02402",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 79,
+        "id": 0
+      },
+      "80": {
+        "tables": {},
+        "fields": {
+          "value": "Testefactuur@email.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L03059",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 80,
+        "id": 0
+      },
+      "81": {
+        "tables": {},
+        "fields": {
+          "value": "NL13 TEST 0123 4567 89",
+          "code": "",
+          "omsch": "",
+          "number": "L03016",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 81,
+        "id": 0
+      },
+      "82": {
+        "tables": {},
+        "fields": {
+          "value": "TEst achternaam %%",
+          "code": "",
+          "omsch": "",
+          "number": "L02000",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 82,
+        "id": 0
+      },
+      "83": {
+        "tables": {},
+        "fields": {
+          "value": "a",
+          "code": "",
+          "omsch": "",
+          "number": "L02001",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 83,
+        "id": 0
+      },
+      "84": {
+        "tables": {},
+        "fields": {
+          "value": "voorvoegse",
+          "code": "",
+          "omsch": "",
+          "number": "L02002",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 84,
+        "id": 0
+      },
+      "85": {
+        "tables": {},
+        "fields": {
+          "value": "Partner@test.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L02020",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 85,
+        "id": 0
+      },
+      "86": {
+        "tables": {},
+        "fields": {
+          "value": "Mobielpartne",
+          "code": "",
+          "omsch": "",
+          "number": "L02019",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 86,
+        "id": 0
+      },
+      "87": {
+        "tables": {},
+        "fields": {
+          "value": "01-01-1980",
+          "code": "",
+          "omsch": "",
+          "number": "L02008",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 87,
+        "id": 0
+      },
+      "88": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "M",
+          "omsch": "Man",
+          "number": "L02005",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 88,
+        "id": 0
+      },
+      "89": {
+        "tables": {},
+        "fields": {
+          "value": "Test1",
+          "code": "",
+          "omsch": "",
+          "number": "L02100",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 89,
+        "id": 0
+      },
+      "90": {
+        "tables": {},
+        "fields": {
+          "value": "voor1",
+          "code": "",
+          "omsch": "",
+          "number": "L02101",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 90,
+        "id": 0
+      },
+      "91": {
+        "tables": {},
+        "fields": {
+          "value": "tussen1",
+          "code": "",
+          "omsch": "",
+          "number": "L02102",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 91,
+        "id": 0
+      },
+      "92": {
+        "tables": {},
+        "fields": {
+          "value": "19-10-1999",
+          "code": "",
+          "omsch": "",
+          "number": "L02103",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 92,
+        "id": 0
+      },
+      "93": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "M",
+          "omsch": "Man",
+          "number": "L02104",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 93,
+        "id": 0
+      },
+      "94": {
+        "tables": {},
+        "fields": {
+          "value": "emailkind1@aa.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L09320",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 94,
+        "id": 0
+      },
+      "95": {
+        "tables": {},
+        "fields": {
+          "value": "01",
+          "code": "",
+          "omsch": "",
+          "number": "L09325",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 95,
+        "id": 0
+      },
+      "96": {
+        "tables": {},
+        "fields": {
+          "value": "Test2",
+          "code": "",
+          "omsch": "",
+          "number": "L02110",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 96,
+        "id": 0
+      },
+      "97": {
+        "tables": {},
+        "fields": {
+          "value": "voor2",
+          "code": "",
+          "omsch": "",
+          "number": "L02111",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 97,
+        "id": 0
+      },
+      "98": {
+        "tables": {},
+        "fields": {
+          "value": "tussen2",
+          "code": "",
+          "omsch": "",
+          "number": "L02112",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 98,
+        "id": 0
+      },
+      "99": {
+        "tables": {},
+        "fields": {
+          "value": "19-10-1998",
+          "code": "",
+          "omsch": "",
+          "number": "L02113",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 99,
+        "id": 0
+      },
+      "100": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "V",
+          "omsch": "Vrouw",
+          "number": "L02114",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 100,
+        "id": 0
+      },
+      "101": {
+        "tables": {},
+        "fields": {
+          "value": "emailkind2@aa.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L09321",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 101,
+        "id": 0
+      },
+      "102": {
+        "tables": {},
+        "fields": {
+          "value": "02",
+          "code": "",
+          "omsch": "",
+          "number": "L09326",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 102,
+        "id": 0
+      },
+      "103": {
+        "tables": {},
+        "fields": {
+          "value": "Test3",
+          "code": "",
+          "omsch": "",
+          "number": "L02120",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 103,
+        "id": 0
+      },
+      "104": {
+        "tables": {},
+        "fields": {
+          "value": "voor3",
+          "code": "",
+          "omsch": "",
+          "number": "L02121",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 104,
+        "id": 0
+      },
+      "105": {
+        "tables": {},
+        "fields": {
+          "value": "tussen3",
+          "code": "",
+          "omsch": "",
+          "number": "L02122",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 105,
+        "id": 0
+      },
+      "106": {
+        "tables": {},
+        "fields": {
+          "value": "19-10-1997",
+          "code": "",
+          "omsch": "",
+          "number": "L02123",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 106,
+        "id": 0
+      },
+      "107": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "M",
+          "omsch": "Man",
+          "number": "L02124",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 107,
+        "id": 0
+      },
+      "108": {
+        "tables": {},
+        "fields": {
+          "value": "emailkind3@aa.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L09322",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 108,
+        "id": 0
+      },
+      "109": {
+        "tables": {},
+        "fields": {
+          "value": "03",
+          "code": "",
+          "omsch": "",
+          "number": "L09327",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 109,
+        "id": 0
+      },
+      "110": {
+        "tables": {},
+        "fields": {
+          "value": "Test5",
+          "code": "",
+          "omsch": "",
+          "number": "L02140",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 110,
+        "id": 0
+      },
+      "111": {
+        "tables": {},
+        "fields": {
+          "value": "voor5",
+          "code": "",
+          "omsch": "",
+          "number": "L02141",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 111,
+        "id": 0
+      },
+      "112": {
+        "tables": {},
+        "fields": {
+          "value": "19-10-1919",
+          "code": "",
+          "omsch": "",
+          "number": "L02143",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 112,
+        "id": 0
+      },
+      "113": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "M",
+          "omsch": "Man",
+          "number": "L02144",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 113,
+        "id": 0
+      },
+      "114": {
+        "tables": {},
+        "fields": {
+          "value": "emailkind5@aa.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L09324",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 114,
+        "id": 0
+      },
+      "115": {
+        "tables": {},
+        "fields": {
+          "value": "05",
+          "code": "",
+          "omsch": "",
+          "number": "L09329",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 115,
+        "id": 0
+      },
+      "116": {
+        "tables": {},
+        "fields": {
+          "value": "a1a64BYYC79T593",
+          "code": "",
+          "omsch": "",
+          "number": "Uid",
+          "L02020": "Partner@test.nl",
+          "ExtraData": ""
+        },
+        "index": 116,
+        "id": 0
+      }
+    },
+    "tabel": {
+      "0": {
+        "tables": {},
+        "fields": {
+          "value": "03100",
+          "code": "",
+          "omsch": "",
+          "number": "Formuliersoort",
+          "ExtraData": ""
+        },
+        "index": 0,
+        "id": 0
+      },
+      "1": {
+        "tables": {},
+        "fields": {
+          "value": "X9998",
+          "code": "",
+          "omsch": "",
+          "number": "Formuliernummer",
+          "ExtraData": ""
+        },
+        "index": 1,
+        "id": 0
+      },
+      "2": {
+        "tables": {},
+        "fields": {
+          "value": "00004",
+          "code": "",
+          "omsch": "",
+          "number": "Segment",
+          "ExtraData": ""
+        },
+        "index": 2,
+        "id": 0
+      },
+      "3": {
+        "tables": {},
+        "fields": {
+          "value": "Relatie",
+          "code": "",
+          "omsch": "",
+          "number": "Dossiersoort",
+          "ExtraData": ""
+        },
+        "index": 3,
+        "id": 0
+      },
+      "4": {
+        "tables": {},
+        "fields": {
+          "value": "brief",
+          "code": "",
+          "omsch": "",
+          "number": "Filenaam",
+          "ExtraData": ""
+        },
+        "index": 4,
+        "id": 0
+      },
+      "5": {
+        "tables": {},
+        "fields": {
+          "value": "TEST relatiegegevens verrijken",
+          "code": "",
+          "omsch": "",
+          "number": "Omschrijving",
+          "ExtraData": ""
+        },
+        "index": 5,
+        "id": 0
+      },
+      "6": {
+        "tables": {},
+        "fields": {
+          "value": "01",
+          "code": "",
+          "omsch": "",
+          "number": "Volgnummer",
+          "ExtraData": ""
+        },
+        "index": 6,
+        "id": 0
+      },
+      "7": {
+        "tables": {},
+        "fields": {
+          "value": "cotg",
+          "code": "",
+          "omsch": "",
+          "number": "Output",
+          "ExtraData": ""
+        },
+        "index": 7,
+        "id": 0
+      },
+      "8": {
+        "tables": {},
+        "fields": {
+          "value": "Ja",
+          "code": "",
+          "omsch": "",
+          "number": "PublicatieRelatie",
+          "ExtraData": ""
+        },
+        "index": 8,
+        "id": 0
+      },
+      "9": {
+        "tables": {},
+        "fields": {
+          "value": "Ja",
+          "code": "",
+          "omsch": "",
+          "number": "PublicatieAgent",
+          "ExtraData": ""
+        },
+        "index": 9,
+        "id": 0
+      },
+      "10": {
+        "tables": {},
+        "fields": {
+          "value": "Nee",
+          "code": "",
+          "omsch": "",
+          "number": "PublicatieCollectiviteit",
+          "ExtraData": ""
+        },
+        "index": 10,
+        "id": 0
+      },
+      "11": {
+        "tables": {},
+        "fields": {
+          "value": "Wendy",
+          "code": "",
+          "omsch": "",
+          "number": "L99102",
+          "ExtraData": ""
+        },
+        "index": 11,
+        "id": 0
+      },
+      "12": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "00005",
+          "omsch": "Beheer",
+          "number": "L99518",
+          "ExtraData": ""
+        },
+        "index": 12,
+        "id": 0
+      },
+      "13": {
+        "tables": {},
+        "fields": {
+          "value": "24 januari 2020",
+          "code": "",
+          "omsch": "",
+          "number": "L97020",
+          "ExtraData": ""
+        },
+        "index": 13,
+        "id": 0
+      },
+      "14": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "WENDYB",
+          "omsch": "W. Broek",
+          "number": "L97103",
+          "ExtraData": ""
+        },
+        "index": 14,
+        "id": 0
+      },
+      "15": {
+        "tables": {},
+        "fields": {
+          "value": "wendy.broek@bsbvolmachten.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L99052",
+          "ExtraData": ""
+        },
+        "index": 15,
+        "id": 0
+      },
+      "16": {
+        "tables": {},
+        "fields": {
+          "value": "ict@bsbvolmachten.nl",
+          "code": "",
+          "omsch": "",
+          "number": "L97235",
+          "ExtraData": ""
+        },
+        "index": 16,
+        "id": 0
+      },
+      "17": {
+        "tables": {},
+        "fields": {
+          "value": "03100",
+          "code": "",
+          "omsch": "",
+          "number": "L97425",
+          "ExtraData": ""
+        },
+        "index": 17,
+        "id": 0
+      },
+      "18": {
+        "tables": {},
+        "fields": {
+          "value": "X9998",
+          "code": "",
+          "omsch": "",
+          "number": "L97401",
+          "ExtraData": ""
+        },
+        "index": 18,
+        "id": 0
+      },
+      "19": {
+        "tables": {},
+        "fields": {
+          "value": "",
+          "code": "00017",
+          "omsch": "BSB Verzekeringen",
+          "number": "L00067",
+          "ExtraData": ""
+        },
+        "index": 19,
+        "id": 0
+      },
+      "20": {
+        "tables": {},
+        "fields": {
+          "value": "00017",
+          "code": "",
+          "omsch": "",
+          "number": "L99001",
+          "ExtraData": ""
+        },
+        "index": 20,
+        "id": 0
+      },
+      "21": {
+        "tables": {},
+        "fields": {
+          "value": "60012188",
+          "code": "",
+          "omsch": "",
+          "number": "L99002",
+          "ExtraData": ""
+        },
+        "index": 21,
+        "id": 0
+      },
+      "22": {
+        "tables": {},
+        "fields": {
+          "value": "BSB Verzekeringen",
+          "code": "",
+          "omsch": "",
+          "number": "L99054",
+          "ExtraData": ""
+        },
+        "index": 22,
+        "id": 0
+      },
+      "23": {
+        "tables": {},
+        "fields": {
+          "value": "Minister Ruysstraat",
+          "code": "",
+          "omsch": "",
+          "number": "L99063",
+          "ExtraData": ""
+        },
+        "index": 23,
+        "id": 0
+      },
+      "24": {
+        "tables": {},
+        "fields": {
+          "value": "6",
+          "code": "",
+          "omsch": "",
+          "number": "L99064",
+          "ExtraData": ""
+        },
+        "index": 24,
+        "id": 0
+      },
+      "25": {
+        "tables": {},
+        "fields": {
+          "value": "6162 XK",
+          "code": "",
+          "omsch": "",
+          "number": "L99066",
+          "ExtraData": ""
+        },
+        "index": 25,
+        "id": 0
+      },
+      "26": {
+        "tables": {},
+        "fields": {
+          "value": "Geleen",
+          "code": "",
+          "omsch": "",
+          "number": "L99067",
+          "ExtraData": ""
+        },
+        "index": 26,
+        "id": 0
+      }
+    }
+  },
+  "fields": {
+    "Dossiersoort": "6160 AH",
+    "FileOmschrijving": "brief",
+    "FormOrderNr": "01",
+    "FormulierSoort": "03100",
+    "Formuliernummer": "X9998",
+    "Groenekaart": "NEE",
+    "IncassoTP": "2_BSB",
+    "MailFrom": "info@bsbverzekeringen.nl",
+    "MailTo": "wendy.broek@bsbvolmachten.nl",
+    "Omschrijving": "TEST relatiegegevens verrijken",
+    "Pasje": "NEE",
+    "PerEmail": "3_EL",
+    "Segment": "00004",
+    "agent_code": "00017",
+    "agent_naam": "BSB Verzekeringen",
+    "website": "www.bsbverzekeringen.nl",
+    "rood": "47",
+    "blauw": "156",
+    "groen": "74",
+    "relatienummer": "52633",
+    "klant_naam": "W Test Wendy NIET VERSTUREN AUB",
+    "klant_adres": "Sonnevelt 310 ABCD",
+    "klant_postcode": "3741 XW  BAARN",
+    "klant_naam_2e": "&",
+    "aanhef": "Geachte mevrouw Ter Ter attentie van achternaam,",
+    "datum": "24 januari 2020",
+    "email": "wendy.broek@bsbvolmachten.nl",
+    "Uid": "a1a64BYYC79T593",
+    "L02402": "wendy.broek@bsbvolmachten.nl",
+    "post_digitaal": "Ja",
+    "L99056": "wendy.broek@bsbvolmachten.nl",
+    "Ofile": "",
+    "ExtraData": ""
+  },
+  "index": 1,
+  "id": 0
+}

@@ -131,7 +131,10 @@ export function findIconName(branchCode:string): string {
             branches: [
                 "2305",
                 "2400",
-                "2401"
+                "2401",
+                "2410",
+                "2415",
+                "2420"
             ]
         },
         {
