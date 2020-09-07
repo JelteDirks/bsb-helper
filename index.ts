@@ -50,3 +50,4 @@ export * from "./src/anvaSignCorrection"
 export * from "./src/getFromRecord";
 export * from "./src/defaultSelectOption";
 export * from "./src/parseToFloat";
+export * from "./src/updateAttributes";
