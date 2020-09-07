@@ -1,6 +1,12 @@
+/**
+ *
+ * @param {string} path
+ * @param {OLRecord} record
+ */
 export function getFromRecord(path: string, record: OLRecord): string | number | null {
 
     const tableRE = /(\w+)\[(\w+)=(.+)]$/;
+    const tableIndexRE = /(\w+)\[(\d+)]$/;
     const fieldRE = /\w+/;
     const chunks = path.split('.');
     let current = record;
@@ -11,6 +17,9 @@ export function getFromRecord(path: string, record: OLRecord): string | number |
         } else if (tableRE.test(chunk)) {
             const [, table, fieldname, value] = chunk.match(tableRE);
             current = getFromTable(current.tables[table], fieldname, value);
+        } else if (tableIndexRE.test(chunk)) {
+            const [, table, index] = chunk.match(tableIndexRE);
+            current = current.tables[table][index];
         } else if (fieldRE.test(chunk)) {
             return !!current.fields[chunk] ? current.fields[chunk] : null;
         }
