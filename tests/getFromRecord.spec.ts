@@ -58,6 +58,11 @@ describe('getting values from record by path', () => {
         expect(value).toBe('4');
     });
 
+    test('table by index', () => {
+        const value = getFromRecord('first[0].four', <OLRecord><any>rec);
+        expect(value).toBe('4');
+    });
+
     test('second level table', () => {
         const value = getFromRecord('first[three=33].second[five=55].six', <OLRecord><any>rec);
         expect(value).toBe('66');
