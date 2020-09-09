@@ -60,6 +60,7 @@ export function findIconName(branchCode:string): string {
                 "2109",
                 "2110",
                 "2111",
+                "2114",
                 "2705",
                 "9008"
             ]
@@ -166,6 +167,7 @@ export function findIconName(branchCode:string): string {
             branches: [
                 "2700",
                 "2701",
+                "2703",
                 "2710",
                 "2850",
                 "2911"
@@ -175,7 +177,9 @@ export function findIconName(branchCode:string): string {
             icon: "vrachtauto",
             iconNumber: "19",
             branches: [
-                "2800"
+                "2800",
+                "2801",
+                "2802"
             ]
         },
         {
