@@ -68,7 +68,8 @@ export function findIconName(branchCode:string): string {
             icon: "oldtimer-auto",
             iconNumber: "07",
             branches: [
-                "2105"
+                "2105",
+                "2720"
             ]
         },
         {
