@@ -9,3 +9,4 @@ webpack.dev.js
 .DS_store
 .circleci/
 docs/
+legacy/
