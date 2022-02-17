@@ -1,11 +1,11 @@
-// de template voor hoe de zoekwaarden straks door gegeven moet worden aan de filter functie
+// De template voor hoe de zoekwaarden straks door gegeven moet worden aan de filter functie.
 interface ZoekWaarden {
   hoofdbranche: string;
   branche: string;
   maatschappij: string;
 }
 
-// de template voor hoe een json object/regel er straks uit gaat zien
+// De template voor hoe een json object/regel er straks uit gaat zien.
 interface Regel {
   Niveau: string;
   Hoofdbranche: string | number;
@@ -18,49 +18,65 @@ interface Regel {
   Dekkingscode: string | number;
 }
 
+
+// De definitie van en zoekfunctie voor labels op te zoeken in het record.
+type zoekFunctie = (label: string, codering?: string) => string;
+
+const regels = loadjson('Snippets/pad/naar/bestand.json'); // object waar alle regels in staan
+
+
+for (let fct = 0; fct < record.tables.factuur.length; ++fct) { // Ga alle factuurregels na.
+                                                               // De zoekcriteria waaraan een regel moet voldoen.
+  const criteria: ZoekWaarden = {
+    hoofdbranche: <string>record.tables[fct].fields.hoofdbranche,
+    branche: <string>record.tables[fct].fields.branche,
+    maatschappij: <string>record.tables[fct].fields.maatschappij
+  };
+
+  // Filter alle objecten a.d.h.v. de criteria, en of het label gevuld is of niet.
+  const queue = filterObjects(regels.polis, criteria, zoekLabel.bind(record.tables.factuur.tables.labels));
+
+  logger.info(JSON.stringify(queue, null, 2));
+  // TODO: doe iets met de overgebleven objecten.
+}
+
+
 /**
  *
  * @param jsonInput
  * @param zoekWaarden
  * @param labelZoeker
- * @param dekkingLabelZoeker
  */
 function filterObjects(jsonInput: Regel[],
                        zoekWaarden: ZoekWaarden,
-                       labelZoeker: (label: string) => string,
-                       dekkingLabelZoeker: (label: string) => string): Regel[] {
+                       labelZoeker: zoekFunctie): Regel[] {
   const omschrijvingen = new Set(); // set om bij te houden welke omschrijvingen al gebruikt zijn
+  const queue = [];
 
   for (let i = 0; i < jsonInput.length; ++i) {
     if (!isValidObject(jsonInput[i], zoekWaarden)) {
       continue; // als het object niet voldoet aan de criteria, zoek in het volgende object
     }
 
-    let {Niveau, LabelOmschrijving} = jsonInput[i];
+    let {Niveau, LabelOmschrijving, labelcode} = jsonInput[i];
 
-    // TODO: kijk welke label zoeker er gebruikt moet worden, en zoek dan of de waarde gevuld is
-    if (Niveau.toLowerCase() === "dekking") {
-      // TODO: gebruik dekking label zoeker?
-    } else if (Niveau.toLowerCase() === "polis") {
-      // TODO: gebruik reguliere label zoeker?
-    } else {
-      throw new Error("niveau is niet dekking of polis, dit wordt niet ondersteund");
+    if (typeof labelcode !== 'string') {
+      labelcode = labelcode.toString();
     }
 
-    // TODO: optioneel: kijk if er dubbele omschrijvingen tussen zitten
-    if (omschrijvingen.has(LabelOmschrijving)) {
-      // dubbele omschrijving, hoeft niet toegevoegd te worden
+    const labelWaarde = labelZoeker(labelcode)
 
-    } else {
-      /**
-       * TODO: correcte maatschappij, branche en hoofdbranche, en het label is gevuld.
-       * Voeg dit object toe aan de correct objecten en controleer de volgende
-       */
+    if (labelWaarde === '') {
+      // de waarde voor deze regel is niet gevuld, label hoeft niet geprint te worden
+      continue;
     }
 
-
+    if (!omschrijvingen.has(LabelOmschrijving)) { // Controleer op dubbele omschrijvingen.
+      queue.push(jsonInput[i]); // zet de regel in de wachtrij
+      omschrijvingen.add(LabelOmschrijving); // voeg de omschrijving toe aan de set
+    }
   }
-  return [];
+  return queue;
 }
 
 function isValidObject(o: Regel, z: ZoekWaarden): boolean {
@@ -72,4 +88,29 @@ function isValidObject(o: Regel, z: ZoekWaarden): boolean {
     if (o.Maatschappij !== z.maatschappij) return false;
   }
   return false;
+}
+
+/**
+ * Zoek een label waarde op in een tabel. De tabel moet voldoen aan de vereiste eigenschappen:
+ * - de tabel moet een 'code' veld hebben met daarin het labelnummer
+ * - de tabel moet een 'codering' veld hebben met daarin de gewenste codering (Code / Omsch)
+ * - de tabel moet een 'waarde' veld hebben met daarin de gewenste waarde
+ * - de tabel moet een 'Code' en 'Omsch' veld hebben als het label een coderingslabel is
+ *
+ * LET OP: default zoekopdracht is Waarde, als die niet gevonden is wordt de Omsch gezocht!
+ * @param label labelnummer om te zoeken, zonder 'L'
+ * @param codering codering om te zoeken, Waarde / Omsch / undefined
+ */
+function zoekLabel(label: string, codering?: string): string | "" {
+
+  if (codering === undefined) {
+    return zoekLabel(label, 'Waarde') || zoekLabel(label, 'Omsch');
+  }
+
+  for (let l = 0; l < this.length; ++l) {
+    if (this[l].fields.code === 'L' + label && this[l].fields.codering === codering) {
+      return this[l].fields[codering]
+    }
+  }
+  return "";
 }
