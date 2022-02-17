@@ -7,14 +7,15 @@ interface ZoekWaarden {
 
 // de template voor hoe een json object/regel er straks uit gaat zien
 interface Regel {
-  niveau: string;
-  hoofdbranche: string | number;
-  branche?: string | number;
-  maatschappij?: string;
-  label: string | number;
-  omschrijving: string;
-  resultaatveld: string;
-  controleren: string;
+  Niveau: string;
+  Hoofdbranche: string | number;
+  Branche?: string | number;
+  Maatschappij?: string;
+  labelcode: string | number;
+  LabelOmschrijving: string;
+  ResultaatVeld: string;
+  Weergave: string;
+  Dekkingscode: string | number;
 }
 
 /**
@@ -35,19 +36,19 @@ function filterObjects(jsonInput: Regel[],
       continue; // als het object niet voldoet aan de criteria, zoek in het volgende object
     }
 
-    let {niveau, omschrijving} = jsonInput[i];
+    let {Niveau, LabelOmschrijving} = jsonInput[i];
 
     // TODO: kijk welke label zoeker er gebruikt moet worden, en zoek dan of de waarde gevuld is
-    if (niveau.toLowerCase() === "dekking") {
+    if (Niveau.toLowerCase() === "dekking") {
       // TODO: gebruik dekking label zoeker?
-    } else if (niveau.toLowerCase() === "polis") {
+    } else if (Niveau.toLowerCase() === "polis") {
       // TODO: gebruik reguliere label zoeker?
     } else {
       throw new Error("niveau is niet dekking of polis, dit wordt niet ondersteund");
     }
 
     // TODO: optioneel: kijk if er dubbele omschrijvingen tussen zitten
-    if (omschrijvingen.has(omschrijving)) {
+    if (omschrijvingen.has(LabelOmschrijving)) {
       // dubbele omschrijving, hoeft niet toegevoegd te worden
 
     } else {
@@ -63,12 +64,12 @@ function filterObjects(jsonInput: Regel[],
 }
 
 function isValidObject(o: Regel, z: ZoekWaarden): boolean {
-  if (o.hoofdbranche !== z.hoofdbranche) return false; // controleer of de hoofdbranche matcht
-  if (o.branche) { // controleer branche als deze gevuld is
-    if (o.branche !== z.branche) return false; // branche moet overeen komen
+  if (o.Hoofdbranche !== z.hoofdbranche) return false; // controleer of de hoofdbranche matcht
+  if (o.Branche) { // controleer branche als deze gevuld is
+    if (o.Branche !== z.branche) return false; // branche moet overeen komen
   }
-  if (o.maatschappij) { // controleer maatschappij als deze gevuld is
-    if (o.maatschappij !== z.maatschappij) return false;
+  if (o.Maatschappij) { // controleer maatschappij als deze gevuld is
+    if (o.Maatschappij !== z.maatschappij) return false;
   }
   return false;
 }
