@@ -26,16 +26,20 @@ const regels = loadjson('Snippets/pad/naar/bestand.json'); // object waar alle r
 
 
 for (let fct = 0; fct < record.tables.factuur.length; ++fct) { // Ga alle factuurregels na.
-                                                               // De zoekcriteria waaraan een regel moet voldoen.
+  // De zoekcriteria waaraan een regel moet voldoen.
   const criteria: ZoekWaarden = {
-    hoofdbranche: <string>record.tables[fct].fields.hoofdbranche,
-    branche: <string>record.tables[fct].fields.branche,
-    maatschappij: <string>record.tables[fct].fields.maatschappij
+    hoofdbranche: <string>record.tables.factuur[fct].fields.hoofdbranche, // de hoofdbranche in deze tabel
+    branche: <string>record.tables.factuur[fct].fields.branche, // de branche in deze tabel
+    maatschappij: <string>record.tables.factuur[fct].fields.maatschappij // de maatschappij in deze tabel
   };
 
   // Filter alle objecten a.d.h.v. de criteria, en of het label gevuld is of niet.
-  const queue = filterObjects(regels.polis, criteria, zoekLabel.bind(record.tables.factuur.tables.labels));
+  const queue = filterObjects(
+    regels.polis,
+    criteria,
+    zoekLabel.bind(record.tables.factuur[fct].tables.labels)); // bind de huidige label tabel aan de zoekfunctie
 
+  // alle objecten moeten hier gefilterd zijn, log de objecten naar de console
   logger.info(JSON.stringify(queue, null, 2));
   // TODO: doe iets met de overgebleven objecten.
 }
@@ -81,11 +85,11 @@ function filterObjects(jsonInput: Regel[],
 
 function isValidObject(o: Regel, z: ZoekWaarden): boolean {
   if (o.Hoofdbranche !== z.hoofdbranche) return false; // controleer of de hoofdbranche matcht
-  if (o.Branche) { // controleer branche als deze gevuld is
+  if (o.Branche) { // controleer of branche gevuld is
     if (o.Branche !== z.branche) return false; // branche moet overeen komen
   }
-  if (o.Maatschappij) { // controleer maatschappij als deze gevuld is
-    if (o.Maatschappij !== z.maatschappij) return false;
+  if (o.Maatschappij) { // controleer of maatschappij gevuld is
+    if (o.Maatschappij !== z.maatschappij) return false; // maatschappij moet overeen komen
   }
   return false;
 }
@@ -93,8 +97,8 @@ function isValidObject(o: Regel, z: ZoekWaarden): boolean {
 /**
  * Zoek een label waarde op in een tabel. De tabel moet voldoen aan de vereiste eigenschappen:
  * - de tabel moet een 'code' veld hebben met daarin het labelnummer
- * - de tabel moet een 'codering' veld hebben met daarin de gewenste codering (Code / Omsch)
- * - de tabel moet een 'waarde' veld hebben met daarin de gewenste waarde
+ * - de tabel moet een 'codering' veld hebben met daarin de codering van het huidige label
+ * - de tabel moet een 'waarde' veld hebben met daarin de waarde van het huidige label
  * - de tabel moet een 'Code' en 'Omsch' veld hebben als het label een coderingslabel is
  *
  * LET OP: default zoekopdracht is Waarde, als die niet gevonden is wordt de Omsch gezocht!
@@ -108,7 +112,7 @@ function zoekLabel(label: string, codering?: string): string | "" {
   }
 
   for (let l = 0; l < this.length; ++l) {
-    if (this[l].fields.code === 'L' + label && this[l].fields.codering === codering) {
+    if ((this[l].fields.code === 'L' + label) && (this[l].fields.codering === codering)) {
       return this[l].fields[codering]
     }
   }
