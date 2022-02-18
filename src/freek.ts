@@ -18,12 +18,10 @@ interface Regel {
   Dekkingscode: string | number;
 }
 
-
 // De definitie van en zoekfunctie voor labels op te zoeken in het record.
 type zoekFunctie = (label: string, codering?: string) => string;
 
 const regels = loadjson('Snippets/pad/naar/bestand.json'); // object waar alle regels in staan
-
 
 for (let fct = 0; fct < record.tables.factuur.length; ++fct) { // Ga alle factuurregels na.
   // De zoekcriteria waaraan een regel moet voldoen.
@@ -35,7 +33,7 @@ for (let fct = 0; fct < record.tables.factuur.length; ++fct) { // Ga alle factuu
 
   // Filter alle objecten a.d.h.v. de criteria, en of het label gevuld is of niet.
   const queue = filterObjects(
-    regels.polis,
+    regels.polis, // de polis regels van deze factuur
     criteria,
     zoekLabel.bind(record.tables.factuur[fct].tables.labels)); // bind de huidige label tabel aan de zoekfunctie
 
@@ -47,9 +45,9 @@ for (let fct = 0; fct < record.tables.factuur.length; ++fct) { // Ga alle factuu
 
 /**
  *
- * @param jsonInput
- * @param zoekWaarden
- * @param labelZoeker
+ * @param jsonInput de json array waar alle regels in staan
+ * @param zoekWaarden de waarden waaraan de regels moeten voldoen
+ * @param labelZoeker een functie die de labels kan zoeken in het record
  */
 function filterObjects(jsonInput: Regel[],
                        zoekWaarden: ZoekWaarden,
@@ -100,6 +98,13 @@ function isValidObject(o: Regel, z: ZoekWaarden): boolean {
  * - de tabel moet een 'codering' veld hebben met daarin de codering van het huidige label
  * - de tabel moet een 'waarde' veld hebben met daarin de waarde van het huidige label
  * - de tabel moet een 'Code' en 'Omsch' veld hebben als het label een coderingslabel is
+ *
+ * @example
+ * zoekLabel('10033'); // dit zoekt label 10033 op in de tabel, en geeft het kenteken terug
+ * zoekLabel('10033', 'Waarde'); // dit zoekt specifiek naar de echte waarde van label 10033
+ * zoekLabel('10142') // geen codering gespecificeerd, als de echte waarde leeg is returned de functie de omschrijving
+ * zoekLabel('10142', 'Waarde') // codering gespecificeerd, wordt alleen gezocht naar de echte waarde (bestaat dus niet voor 10142, resultaat is leeg!!!)
+ * zoekLabel(10142) // ERROR: waarde is geen string, maar een getal
  *
  * LET OP: default zoekopdracht is Waarde, als die niet gevonden is wordt de Omsch gezocht!
  * @param label labelnummer om te zoeken, zonder 'L'
