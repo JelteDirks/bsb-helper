@@ -1,5 +1,5 @@
 {
-  "name": "@bsb/helper",
+  "name": "bsb-helper-functions",
   "version": "3.6.0",
   "description": "Helper functions for bsb projects",
   "main": "./lib/index.js",
@@ -10,7 +10,7 @@
     "test": "jest",
     "prepublish": "npm run build",
     "postpublish": "npm run clean",
-    "docs": "npx run typedoc"
+    "docs": "typedoc"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/BSBVolmachten/helper#readme",
   "dependencies": {},
   "devDependencies": {
-    "@bsb/standard-ol-types": "^1.2.0",
+    "objectif-lune-type-definitions": "^1.0.0",
     "@types/jest": "^24.9.1",
     "@types/node": "^11.15.20",
     "jest": "^24.9.0",

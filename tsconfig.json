@@ -6,17 +6,13 @@
     "sourceMap": false,
     "declaration": true,
     "outDir": "lib",
-    "moduleResolution": "node",
-    "typeRoots": [
-      "./node_modules/@bsb",
-      "./node_modules/@types"
-    ],
-    "types": [
-      "standard-ol-types",
-      "jest",
-      "node"
-    ]
+    "moduleResolution": "node"
   },
+  "include": [
+    "./src/**/*.ts",
+    "./tests/**/*.ts",
+    "./node_modules/objectif-lune-type-definitions/index.d.ts"
+  ],
   "typedocOptions": {
     "mode": "modules",
     "out": "docs"
